@@ -1,0 +1,537 @@
+2025-03-28 19:17:56,517 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 19:17:56,517 - FormulaProcessor - INFO - Input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:17:56,517 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 19:17:56,517 - FormulaProcessor - ERROR - Input folder C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Cropped_Elements\2501.00663v1\Formula does not exist!
+2025-03-28 19:19:06,907 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 19:19:06,910 - FormulaProcessor - INFO - Input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:19:06,910 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 19:19:06,910 - FormulaProcessor - INFO - Initializing model and processor...
+2025-03-28 19:19:16,048 - FormulaProcessor - INFO - Model initialization: 9.137 seconds
+2025-03-28 19:19:16,049 - FormulaProcessor - INFO - Scanning for images in C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:19:16,049 - FormulaProcessor - INFO - Found 30 images to process
+2025-03-28 19:19:19,495 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_24.png -> 2501.00663v1_page10_formula_24.tex (load: 0.048s, inference: 3.391s, write: 0.002s, total: 3.440s)
+2025-03-28 19:19:20,563 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_25.png -> 2501.00663v1_page10_formula_25.tex (load: 0.004s, inference: 1.061s, write: 0.001s, total: 1.067s)
+2025-03-28 19:19:24,009 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_26.png -> 2501.00663v1_page10_formula_26.tex (load: 0.006s, inference: 3.438s, write: 0.002s, total: 3.445s)
+2025-03-28 19:19:32,079 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_27.png -> 2501.00663v1_page10_formula_27.tex (load: 0.003s, inference: 8.064s, write: 0.002s, total: 8.069s)
+2025-03-28 19:19:33,970 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_28.png -> 2501.00663v1_page26_formula_28.tex (load: 0.007s, inference: 1.882s, write: 0.002s, total: 1.890s)
+2025-03-28 19:19:35,059 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_29.png -> 2501.00663v1_page26_formula_29.tex (load: 0.006s, inference: 1.080s, write: 0.002s, total: 1.088s)
+2025-03-28 19:19:35,894 - FormulaProcessor - INFO - Processed 2501.00663v1_page27_formula_30.png -> 2501.00663v1_page27_formula_30.tex (load: 0.006s, inference: 0.827s, write: 0.002s, total: 0.835s)
+2025-03-28 19:19:36,440 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_1.png -> 2501.00663v1_page3_formula_1.tex (load: 0.006s, inference: 0.538s, write: 0.002s, total: 0.545s)
+2025-03-28 19:19:37,665 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_2.png -> 2501.00663v1_page3_formula_2.tex (load: 0.006s, inference: 1.217s, write: 0.001s, total: 1.225s)
+2025-03-28 19:19:45,726 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_3.png -> 2501.00663v1_page4_formula_3.tex (load: 0.006s, inference: 8.053s, write: 0.002s, total: 8.061s)
+2025-03-28 19:19:54,743 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_4.png -> 2501.00663v1_page4_formula_4.tex (load: 0.006s, inference: 9.009s, write: 0.002s, total: 9.017s)
+2025-03-28 19:19:56,949 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_5.png -> 2501.00663v1_page4_formula_5.tex (load: 0.007s, inference: 2.196s, write: 0.002s, total: 2.205s)
+2025-03-28 19:19:57,563 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_6.png -> 2501.00663v1_page5_formula_6.tex (load: 0.006s, inference: 0.603s, write: 0.004s, total: 0.613s)
+2025-03-28 19:20:06,685 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_7.png -> 2501.00663v1_page5_formula_7.tex (load: 0.005s, inference: 9.115s, write: 0.002s, total: 9.122s)
+2025-03-28 19:20:07,477 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_8.png -> 2501.00663v1_page5_formula_8.tex (load: 0.005s, inference: 0.784s, write: 0.002s, total: 0.791s)
+2025-03-28 19:20:08,204 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_10.png -> 2501.00663v1_page6_formula_10.tex (load: 0.006s, inference: 0.716s, write: 0.004s, total: 0.726s)
+2025-03-28 19:20:08,670 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_11.png -> 2501.00663v1_page6_formula_11.tex (load: 0.004s, inference: 0.460s, write: 0.002s, total: 0.465s)
+2025-03-28 19:20:17,747 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_12.png -> 2501.00663v1_page6_formula_12.tex (load: 0.006s, inference: 9.066s, write: 0.004s, total: 9.076s)
+2025-03-28 19:20:18,157 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_13.png -> 2501.00663v1_page6_formula_13.tex (load: 0.004s, inference: 0.404s, write: 0.001s, total: 0.409s)
+2025-03-28 19:20:18,783 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_9.png -> 2501.00663v1_page6_formula_9.tex (load: 0.006s, inference: 0.617s, write: 0.002s, total: 0.625s)
+2025-03-28 19:20:20,400 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_14.png -> 2501.00663v1_page7_formula_14.tex (load: 0.005s, inference: 1.610s, write: 0.002s, total: 1.616s)
+2025-03-28 19:20:21,924 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_15.png -> 2501.00663v1_page7_formula_15.tex (load: 0.007s, inference: 1.513s, write: 0.002s, total: 1.522s)
+2025-03-28 19:20:22,348 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_16.png -> 2501.00663v1_page7_formula_16.tex (load: 0.005s, inference: 0.417s, write: 0.002s, total: 0.423s)
+2025-03-28 19:20:23,041 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_17.png -> 2501.00663v1_page8_formula_17.tex (load: 0.004s, inference: 0.684s, write: 0.005s, total: 0.693s)
+2025-03-28 19:20:33,092 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_18.png -> 2501.00663v1_page8_formula_18.tex (load: 0.004s, inference: 10.044s, write: 0.002s, total: 10.050s)
+2025-03-28 19:20:33,529 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_19.png -> 2501.00663v1_page9_formula_19.tex (load: 0.006s, inference: 0.429s, write: 0.002s, total: 0.436s)
+2025-03-28 19:20:43,319 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_20.png -> 2501.00663v1_page9_formula_20.tex (load: 0.006s, inference: 9.781s, write: 0.002s, total: 9.789s)
+2025-03-28 19:20:43,744 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_21.png -> 2501.00663v1_page9_formula_21.tex (load: 0.005s, inference: 0.417s, write: 0.002s, total: 0.424s)
+2025-03-28 19:20:44,892 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_22.png -> 2501.00663v1_page9_formula_22.tex (load: 0.005s, inference: 1.140s, write: 0.002s, total: 1.147s)
+2025-03-28 19:20:45,401 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_23.png -> 2501.00663v1_page9_formula_23.tex (load: 0.005s, inference: 0.502s, write: 0.002s, total: 0.509s)
+2025-03-28 19:20:45,402 - FormulaProcessor - INFO - 
+=== Processing Summary ===
+2025-03-28 19:20:45,403 - FormulaProcessor - INFO - Total processing time: 98.492 seconds
+2025-03-28 19:25:57,865 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 19:25:57,866 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:25:57,866 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 19:25:57,866 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 19:25:57,867 - FormulaProcessor - INFO - Initializing model and processor...
+2025-03-28 19:26:05,799 - FormulaProcessor - INFO - Model initialization: 7.932 seconds
+2025-03-28 19:26:05,799 - FormulaProcessor - INFO - Scanning for images in C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:26:05,800 - FormulaProcessor - INFO - Found 30 images to process
+2025-03-28 19:26:09,343 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_24.png -> 2501.00663v1_page10_formula_24.tex (load: 0.067s, inference: 3.466s, write: 0.002s, total: 3.535s)
+2025-03-28 19:26:10,426 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_25.png -> 2501.00663v1_page10_formula_25.tex (load: 0.004s, inference: 1.077s, write: 0.002s, total: 1.082s)
+2025-03-28 19:26:13,785 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_26.png -> 2501.00663v1_page10_formula_26.tex (load: 0.006s, inference: 3.351s, write: 0.002s, total: 3.359s)
+2025-03-28 19:26:22,158 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_27.png -> 2501.00663v1_page10_formula_27.tex (load: 0.004s, inference: 8.366s, write: 0.002s, total: 8.372s)
+2025-03-28 19:26:24,083 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_28.png -> 2501.00663v1_page26_formula_28.tex (load: 0.004s, inference: 1.917s, write: 0.002s, total: 1.923s)
+2025-03-28 19:26:25,179 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_29.png -> 2501.00663v1_page26_formula_29.tex (load: 0.005s, inference: 1.087s, write: 0.002s, total: 1.094s)
+2025-03-28 19:26:26,033 - FormulaProcessor - INFO - Processed 2501.00663v1_page27_formula_30.png -> 2501.00663v1_page27_formula_30.tex (load: 0.004s, inference: 0.848s, write: 0.002s, total: 0.854s)
+2025-03-28 19:26:26,593 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_1.png -> 2501.00663v1_page3_formula_1.tex (load: 0.005s, inference: 0.553s, write: 0.002s, total: 0.559s)
+2025-03-28 19:26:27,835 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_2.png -> 2501.00663v1_page3_formula_2.tex (load: 0.006s, inference: 1.234s, write: 0.001s, total: 1.242s)
+2025-03-28 19:26:36,667 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_3.png -> 2501.00663v1_page4_formula_3.tex (load: 0.007s, inference: 8.822s, write: 0.002s, total: 8.831s)
+2025-03-28 19:26:46,225 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_4.png -> 2501.00663v1_page4_formula_4.tex (load: 0.005s, inference: 9.551s, write: 0.002s, total: 9.558s)
+2025-03-28 19:26:48,536 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_5.png -> 2501.00663v1_page4_formula_5.tex (load: 0.007s, inference: 2.301s, write: 0.002s, total: 2.310s)
+2025-03-28 19:26:49,184 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_6.png -> 2501.00663v1_page5_formula_6.tex (load: 0.006s, inference: 0.639s, write: 0.002s, total: 0.646s)
+2025-03-28 19:26:58,467 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_7.png -> 2501.00663v1_page5_formula_7.tex (load: 0.006s, inference: 9.275s, write: 0.002s, total: 9.283s)
+2025-03-28 19:26:59,232 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_8.png -> 2501.00663v1_page5_formula_8.tex (load: 0.006s, inference: 0.755s, write: 0.002s, total: 0.763s)
+2025-03-28 19:26:59,939 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_10.png -> 2501.00663v1_page6_formula_10.tex (load: 0.005s, inference: 0.700s, write: 0.002s, total: 0.708s)
+2025-03-28 19:27:00,393 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_11.png -> 2501.00663v1_page6_formula_11.tex (load: 0.006s, inference: 0.445s, write: 0.001s, total: 0.453s)
+2025-03-28 19:27:09,628 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_12.png -> 2501.00663v1_page6_formula_12.tex (load: 0.006s, inference: 9.226s, write: 0.002s, total: 9.234s)
+2025-03-28 19:27:10,104 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_13.png -> 2501.00663v1_page6_formula_13.tex (load: 0.006s, inference: 0.468s, write: 0.002s, total: 0.476s)
+2025-03-28 19:27:10,761 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_9.png -> 2501.00663v1_page6_formula_9.tex (load: 0.006s, inference: 0.649s, write: 0.002s, total: 0.656s)
+2025-03-28 19:27:12,383 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_14.png -> 2501.00663v1_page7_formula_14.tex (load: 0.006s, inference: 1.613s, write: 0.002s, total: 1.621s)
+2025-03-28 19:27:13,866 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_15.png -> 2501.00663v1_page7_formula_15.tex (load: 0.007s, inference: 1.473s, write: 0.002s, total: 1.482s)
+2025-03-28 19:27:14,260 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_16.png -> 2501.00663v1_page7_formula_16.tex (load: 0.006s, inference: 0.387s, write: 0.002s, total: 0.394s)
+2025-03-28 19:27:14,893 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_17.png -> 2501.00663v1_page8_formula_17.tex (load: 0.006s, inference: 0.625s, write: 0.002s, total: 0.632s)
+2025-03-28 19:27:23,911 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_18.png -> 2501.00663v1_page8_formula_18.tex (load: 0.006s, inference: 9.009s, write: 0.002s, total: 9.017s)
+2025-03-28 19:27:24,297 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_19.png -> 2501.00663v1_page9_formula_19.tex (load: 0.006s, inference: 0.376s, write: 0.002s, total: 0.384s)
+2025-03-28 19:27:33,513 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_20.png -> 2501.00663v1_page9_formula_20.tex (load: 0.004s, inference: 9.209s, write: 0.002s, total: 9.216s)
+2025-03-28 19:27:33,884 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_21.png -> 2501.00663v1_page9_formula_21.tex (load: 0.004s, inference: 0.365s, write: 0.002s, total: 0.371s)
+2025-03-28 19:27:34,976 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_22.png -> 2501.00663v1_page9_formula_22.tex (load: 0.007s, inference: 1.081s, write: 0.002s, total: 1.090s)
+2025-03-28 19:27:35,413 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_23.png -> 2501.00663v1_page9_formula_23.tex (load: 0.004s, inference: 0.429s, write: 0.002s, total: 0.435s)
+2025-03-28 19:27:35,414 - FormulaProcessor - INFO - 
+=== Processing Summary ===
+2025-03-28 19:27:35,415 - FormulaProcessor - INFO - Total processing time: 97.549 seconds
+2025-03-28 19:27:35,415 - FormulaProcessor - INFO - Model initialization time: 7.932 seconds
+2025-03-28 19:27:35,415 - FormulaProcessor - INFO - Total images processed: 30
+2025-03-28 19:27:35,416 - FormulaProcessor - INFO - Failed images: 0
+2025-03-28 19:27:35,416 - FormulaProcessor - INFO - Average time per image: 2.986 seconds
+2025-03-28 19:27:35,416 - FormulaProcessor - INFO - Average image load time: 0.008 seconds
+2025-03-28 19:27:35,416 - FormulaProcessor - INFO - Average inference time: 2.977 seconds
+2025-03-28 19:27:35,417 - FormulaProcessor - INFO - Average file write time: 0.002 seconds
+2025-03-28 19:27:35,417 - FormulaProcessor - INFO - Performance: 0.31 images/second
+2025-03-28 19:27:35,418 - FormulaProcessor - INFO - Processing complete. Success rate: 100.0%
+2025-03-28 19:27:35,418 - FormulaProcessor - INFO - Total time including setup: 97.552 seconds
+2025-03-28 19:33:16,936 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 19:33:16,936 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:33:16,936 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 19:33:16,936 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 19:33:16,937 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 19:33:25,829 - FormulaProcessor - INFO - Model initialization: 8.892 seconds
+2025-03-28 19:33:25,830 - FormulaProcessor - INFO - Scanning for images in C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:33:25,831 - FormulaProcessor - INFO - Found 30 images to process
+2025-03-28 19:33:29,464 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_24.png (load: 0.032s, inference: 3.596s, write: 0.001s, total: 3.629s)
+2025-03-28 19:33:30,621 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_25.png (load: 0.002s, inference: 1.153s, write: 0.002s, total: 1.157s)
+2025-03-28 19:33:34,143 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_26.png (load: 0.002s, inference: 3.516s, write: 0.002s, total: 3.520s)
+2025-03-28 19:33:42,524 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_27.png (load: 0.002s, inference: 8.376s, write: 0.002s, total: 8.380s)
+2025-03-28 19:33:44,526 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_28.png (load: 0.003s, inference: 1.994s, write: 0.003s, total: 2.001s)
+2025-03-28 19:33:45,745 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_29.png (load: 0.003s, inference: 1.208s, write: 0.002s, total: 1.212s)
+2025-03-28 19:33:46,671 - FormulaProcessor - INFO - Processed 2501.00663v1_page27_formula_30.png (load: 0.002s, inference: 0.921s, write: 0.002s, total: 0.924s)
+2025-03-28 19:33:47,293 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_1.png (load: 0.002s, inference: 0.616s, write: 0.002s, total: 0.621s)
+2025-03-28 19:33:48,604 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_2.png (load: 0.003s, inference: 1.307s, write: 0.001s, total: 1.311s)
+2025-03-28 19:33:57,568 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_3.png (load: 0.006s, inference: 8.955s, write: 0.003s, total: 8.963s)
+2025-03-28 19:34:29,068 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 19:34:29,068 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:34:29,068 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 19:34:29,068 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 19:34:29,068 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 19:34:47,455 - FormulaProcessor - INFO - Model initialization: 18.386 seconds
+2025-03-28 19:34:47,457 - FormulaProcessor - INFO - Scanning for images in C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:34:47,458 - FormulaProcessor - INFO - Found 30 images to process
+2025-03-28 19:34:50,827 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_24.png (load: 0.016s, inference: 3.348s, write: 0.001s, total: 3.366s)
+2025-03-28 19:34:51,941 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_25.png (load: 0.002s, inference: 1.110s, write: 0.002s, total: 1.114s)
+2025-03-28 19:34:55,384 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_26.png (load: 0.002s, inference: 3.437s, write: 0.002s, total: 3.442s)
+2025-03-28 19:35:03,588 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_27.png (load: 0.002s, inference: 8.199s, write: 0.002s, total: 8.203s)
+2025-03-28 19:35:05,592 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_28.png (load: 0.002s, inference: 1.999s, write: 0.002s, total: 2.003s)
+2025-03-28 19:35:06,711 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_29.png (load: 0.002s, inference: 1.115s, write: 0.002s, total: 1.118s)
+2025-03-28 19:35:07,571 - FormulaProcessor - INFO - Processed 2501.00663v1_page27_formula_30.png (load: 0.002s, inference: 0.856s, write: 0.001s, total: 0.859s)
+2025-03-28 19:35:08,159 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_1.png (load: 0.002s, inference: 0.584s, write: 0.001s, total: 0.587s)
+2025-03-28 19:35:09,401 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_2.png (load: 0.002s, inference: 1.237s, write: 0.002s, total: 1.241s)
+2025-03-28 19:35:18,469 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_3.png (load: 0.003s, inference: 9.060s, write: 0.004s, total: 9.068s)
+2025-03-28 19:35:27,594 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_4.png (load: 0.003s, inference: 9.119s, write: 0.002s, total: 9.123s)
+2025-03-28 19:35:29,878 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_5.png (load: 0.005s, inference: 2.276s, write: 0.002s, total: 2.283s)
+2025-03-28 19:35:30,474 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_6.png (load: 0.004s, inference: 0.589s, write: 0.002s, total: 0.595s)
+2025-03-28 19:35:39,817 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_7.png (load: 0.004s, inference: 9.336s, write: 0.002s, total: 9.342s)
+2025-03-28 19:35:40,673 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_8.png (load: 0.002s, inference: 0.851s, write: 0.002s, total: 0.856s)
+2025-03-28 19:35:41,455 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_10.png (load: 0.004s, inference: 0.774s, write: 0.003s, total: 0.780s)
+2025-03-28 19:35:41,948 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_11.png (load: 0.002s, inference: 0.487s, write: 0.002s, total: 0.491s)
+2025-03-28 19:35:51,324 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_12.png (load: 0.004s, inference: 9.370s, write: 0.002s, total: 9.376s)
+2025-03-28 19:35:51,757 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_13.png (load: 0.002s, inference: 0.428s, write: 0.002s, total: 0.431s)
+2025-03-28 19:35:52,448 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_9.png (load: 0.004s, inference: 0.685s, write: 0.002s, total: 0.690s)
+2025-03-28 19:35:54,031 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_14.png (load: 0.003s, inference: 1.577s, write: 0.002s, total: 1.582s)
+2025-03-28 19:35:55,513 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_15.png (load: 0.005s, inference: 1.474s, write: 0.002s, total: 1.481s)
+2025-03-28 19:35:55,924 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_16.png (load: 0.004s, inference: 0.404s, write: 0.002s, total: 0.410s)
+2025-03-28 19:35:56,593 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_17.png (load: 0.004s, inference: 0.658s, write: 0.005s, total: 0.667s)
+2025-03-28 19:36:06,159 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_18.png (load: 0.002s, inference: 9.560s, write: 0.002s, total: 9.564s)
+2025-03-28 19:36:06,597 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_19.png (load: 0.002s, inference: 0.434s, write: 0.001s, total: 0.437s)
+2025-03-28 19:36:16,964 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_20.png (load: 0.002s, inference: 10.362s, write: 0.002s, total: 10.366s)
+2025-03-28 19:36:17,367 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_21.png (load: 0.002s, inference: 0.397s, write: 0.002s, total: 0.401s)
+2025-03-28 19:36:18,683 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_22.png (load: 0.002s, inference: 1.312s, write: 0.002s, total: 1.316s)
+2025-03-28 19:36:19,212 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_23.png (load: 0.002s, inference: 0.523s, write: 0.003s, total: 0.527s)
+2025-03-28 19:36:19,213 - FormulaProcessor - INFO - 
+=== Processing Summary ===
+2025-03-28 19:36:19,214 - FormulaProcessor - INFO - Total processing time: 91.758 seconds
+2025-03-28 19:36:19,214 - FormulaProcessor - INFO - Model initialization time: 18.386 seconds
+2025-03-28 19:36:19,214 - FormulaProcessor - INFO - Total images processed: 30
+2025-03-28 19:36:19,214 - FormulaProcessor - INFO - Failed images: 0
+2025-03-28 19:36:19,215 - FormulaProcessor - INFO - Average time per image: 3.057 seconds
+2025-03-28 19:36:19,215 - FormulaProcessor - INFO - Average image load time: 0.003 seconds
+2025-03-28 19:36:19,215 - FormulaProcessor - INFO - Average inference time: 3.052 seconds
+2025-03-28 19:36:19,215 - FormulaProcessor - INFO - Average file write time: 0.002 seconds
+2025-03-28 19:36:19,215 - FormulaProcessor - INFO - Performance: 0.33 images/second
+2025-03-28 19:36:19,216 - FormulaProcessor - INFO - Processing complete. Success rate: 100.0%
+2025-03-28 19:36:19,216 - FormulaProcessor - INFO - Total time including setup: 110.147 seconds
+2025-03-28 19:43:31,930 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 19:43:40,856 - FormulaProcessor - INFO - Model initialization: 8.926 seconds
+2025-03-28 19:43:40,860 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 19:43:48,187 - FormulaProcessor - INFO - Model initialization: 7.327 seconds
+2025-03-28 19:45:35,096 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 19:45:35,096 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:45:35,096 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 19:45:35,098 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 19:45:35,098 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 19:45:42,835 - FormulaProcessor - INFO - Model initialization: 7.737 seconds
+2025-03-28 19:45:42,837 - FormulaProcessor - INFO - Scanning for images in C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:45:42,838 - FormulaProcessor - INFO - Found 30 images to process
+2025-03-28 19:45:42,838 - FormulaProcessor - INFO - Processing images in parallel
+2025-03-28 19:45:47,666 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_13.png (load: 0.125s, inference: 4.675s, write: 0.023s, total: 4.823s)
+2025-03-28 19:45:48,136 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_16.png (load: 0.140s, inference: 5.037s, write: 0.115s, total: 5.292s)
+2025-03-28 19:45:48,276 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_11.png (load: 0.116s, inference: 5.213s, write: 0.105s, total: 5.434s)
+2025-03-28 19:45:50,500 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_1.png (load: 0.126s, inference: 7.325s, write: 0.208s, total: 7.659s)
+2025-03-28 19:45:50,647 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_6.png (load: 0.119s, inference: 7.596s, write: 0.091s, total: 7.806s)
+2025-03-28 19:45:51,359 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_10.png (load: 0.162s, inference: 8.231s, write: 0.124s, total: 8.518s)
+2025-03-28 19:45:52,251 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_9.png (load: 0.140s, inference: 9.010s, write: 0.258s, total: 9.408s)
+2025-03-28 19:45:52,851 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_8.png (load: 0.127s, inference: 9.752s, write: 0.130s, total: 10.008s)
+2025-03-28 19:45:52,933 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_17.png (load: 0.132s, inference: 9.874s, write: 0.083s, total: 10.088s)
+2025-03-28 19:45:53,633 - FormulaProcessor - INFO - Processed 2501.00663v1_page27_formula_30.png (load: 0.187s, inference: 10.560s, write: 0.045s, total: 10.793s)
+2025-03-28 19:45:54,101 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_19.png (load: 0.391s, inference: 5.462s, write: 0.042s, total: 5.894s)
+2025-03-28 19:45:54,615 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_21.png (load: 0.295s, inference: 3.759s, write: 0.016s, total: 4.070s)
+2025-03-28 19:45:56,460 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_23.png (load: 0.386s, inference: 4.656s, write: 0.017s, total: 5.059s)
+2025-03-28 19:45:57,256 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_2.png (load: 0.176s, inference: 14.222s, write: 0.018s, total: 14.417s)
+2025-03-28 19:45:58,356 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_25.png (load: 0.152s, inference: 15.346s, write: 0.019s, total: 15.517s)
+2025-03-28 19:45:59,293 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_29.png (load: 0.125s, inference: 16.291s, write: 0.037s, total: 16.453s)
+2025-03-28 19:45:59,572 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_22.png (load: 0.287s, inference: 8.571s, write: 0.033s, total: 8.892s)
+2025-03-28 19:45:59,853 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_15.png (load: 0.119s, inference: 16.883s, write: 0.007s, total: 17.009s)
+2025-03-28 19:46:01,096 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_14.png (load: 0.129s, inference: 18.121s, write: 0.003s, total: 18.253s)
+2025-03-28 19:46:05,555 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_28.png (load: 0.127s, inference: 22.582s, write: 0.007s, total: 22.716s)
+2025-03-28 19:46:06,757 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_5.png (load: 0.123s, inference: 23.766s, write: 0.029s, total: 23.917s)
+2025-03-28 19:46:15,812 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_24.png (load: 0.149s, inference: 32.816s, write: 0.009s, total: 32.974s)
+2025-03-28 19:46:17,323 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_26.png (load: 0.139s, inference: 34.337s, write: 0.008s, total: 34.484s)
+2025-03-28 19:46:58,758 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_27.png (load: 0.122s, inference: 75.783s, write: 0.013s, total: 75.919s)
+2025-03-28 19:47:00,445 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_18.png (load: 0.168s, inference: 72.604s, write: 0.004s, total: 72.777s)
+2025-03-28 19:47:01,265 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_7.png (load: 0.123s, inference: 78.291s, write: 0.010s, total: 78.424s)
+2025-03-28 19:47:02,655 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_12.png (load: 0.123s, inference: 79.687s, write: 0.002s, total: 79.812s)
+2025-03-28 19:47:03,462 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_4.png (load: 0.134s, inference: 80.482s, write: 0.005s, total: 80.621s)
+2025-03-28 19:47:04,005 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_3.png (load: 0.137s, inference: 81.024s, write: 0.003s, total: 81.165s)
+2025-03-28 19:47:04,319 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_20.png (load: 0.380s, inference: 75.608s, write: 0.003s, total: 75.991s)
+2025-03-28 19:47:04,330 - FormulaProcessor - INFO - 
+=== Processing Summary ===
+2025-03-28 19:47:04,330 - FormulaProcessor - INFO - Total processing time: 81.494 seconds
+2025-03-28 19:47:04,331 - FormulaProcessor - INFO - Model initialization time: 7.737 seconds
+2025-03-28 19:47:04,331 - FormulaProcessor - INFO - Total images processed: 30
+2025-03-28 19:47:04,331 - FormulaProcessor - INFO - Failed images: 0
+2025-03-28 19:47:04,332 - FormulaProcessor - INFO - Average time per image: 28.140 seconds
+2025-03-28 19:47:04,332 - FormulaProcessor - INFO - Average image load time: 0.172 seconds
+2025-03-28 19:47:04,332 - FormulaProcessor - INFO - Average inference time: 27.919 seconds
+2025-03-28 19:47:04,333 - FormulaProcessor - INFO - Average file write time: 0.049 seconds
+2025-03-28 19:47:04,333 - FormulaProcessor - INFO - Performance: 0.37 images/second
+2025-03-28 19:47:04,333 - FormulaProcessor - INFO - Parallel processing speedup: 10.36x
+2025-03-28 19:47:04,334 - FormulaProcessor - INFO - Processing complete. Success rate: 100.0%
+2025-03-28 19:47:04,334 - FormulaProcessor - INFO - Total time including setup: 89.237 seconds
+2025-03-28 19:47:38,775 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 19:47:38,775 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:47:38,775 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 19:47:38,775 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 19:47:38,776 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 19:47:47,285 - FormulaProcessor - INFO - Model initialization: 8.509 seconds
+2025-03-28 19:47:47,286 - FormulaProcessor - INFO - Scanning for images in C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:47:47,287 - FormulaProcessor - INFO - Found 30 images to process
+2025-03-28 19:47:47,287 - FormulaProcessor - INFO - Processing images in parallel
+2025-03-28 19:47:51,882 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_16.png (load: 0.034s, inference: 4.539s, write: 0.013s, total: 4.586s)
+2025-03-28 19:47:52,048 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_11.png (load: 0.028s, inference: 4.712s, write: 0.013s, total: 4.754s)
+2025-03-28 19:47:53,028 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_13.png (load: 0.038s, inference: 5.547s, write: 0.148s, total: 5.733s)
+2025-03-28 19:47:54,559 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_1.png (load: 0.073s, inference: 7.082s, write: 0.114s, total: 7.269s)
+2025-03-28 19:47:55,379 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_6.png (load: 0.055s, inference: 7.993s, write: 0.038s, total: 8.086s)
+2025-03-28 19:47:55,462 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_10.png (load: 0.026s, inference: 8.033s, write: 0.109s, total: 8.168s)
+2025-03-28 19:47:56,712 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_9.png (load: 0.027s, inference: 9.234s, write: 0.156s, total: 9.417s)
+2025-03-28 19:47:56,714 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_17.png (load: 0.024s, inference: 9.285s, write: 0.109s, total: 9.418s)
+2025-03-28 19:47:56,939 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_8.png (load: 0.029s, inference: 9.519s, write: 0.098s, total: 9.646s)
+2025-03-28 19:47:57,095 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_19.png (load: 0.096s, inference: 4.798s, write: 0.065s, total: 4.960s)
+2025-03-28 19:47:58,512 - FormulaProcessor - INFO - Processed 2501.00663v1_page27_formula_30.png (load: 0.084s, inference: 11.096s, write: 0.041s, total: 11.222s)
+2025-03-28 19:47:59,198 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_21.png (load: 0.099s, inference: 4.416s, write: 0.034s, total: 4.549s)
+2025-03-28 19:48:00,158 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_23.png (load: 0.123s, inference: 4.453s, write: 0.027s, total: 4.603s)
+2025-03-28 19:48:02,306 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_2.png (load: 0.045s, inference: 14.930s, write: 0.039s, total: 15.014s)
+2025-03-28 19:48:03,548 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_29.png (load: 0.030s, inference: 16.225s, write: 0.004s, total: 16.258s)
+2025-03-28 19:48:04,370 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_25.png (load: 0.034s, inference: 17.015s, write: 0.033s, total: 17.082s)
+2025-03-28 19:48:05,431 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_22.png (load: 0.128s, inference: 9.812s, write: 0.029s, total: 9.969s)
+2025-03-28 19:48:06,297 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_15.png (load: 0.106s, inference: 18.880s, write: 0.015s, total: 19.001s)
+2025-03-28 19:48:07,058 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_14.png (load: 0.092s, inference: 19.658s, write: 0.012s, total: 19.762s)
+2025-03-28 19:48:10,874 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_28.png (load: 0.100s, inference: 23.467s, write: 0.017s, total: 23.583s)
+2025-03-28 19:48:11,514 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_5.png (load: 0.047s, inference: 24.139s, write: 0.035s, total: 24.221s)
+2025-03-28 19:48:22,533 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_26.png (load: 0.040s, inference: 35.185s, write: 0.019s, total: 35.244s)
+2025-03-28 19:48:23,002 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_24.png (load: 0.032s, inference: 35.673s, write: 0.009s, total: 35.714s)
+2025-03-28 19:49:05,379 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_27.png (load: 0.047s, inference: 78.032s, write: 0.011s, total: 78.090s)
+2025-03-28 19:49:06,230 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_20.png (load: 0.194s, inference: 72.872s, write: 0.020s, total: 73.087s)
+2025-03-28 19:49:06,571 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_12.png (load: 0.033s, inference: 79.232s, write: 0.011s, total: 79.276s)
+2025-03-28 19:49:06,802 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_7.png (load: 0.026s, inference: 79.478s, write: 0.005s, total: 79.508s)
+2025-03-28 19:49:07,210 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_18.png (load: 0.040s, inference: 75.256s, write: 0.005s, total: 75.301s)
+2025-03-28 19:49:07,338 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_3.png (load: 0.075s, inference: 79.967s, write: 0.004s, total: 80.046s)
+2025-03-28 19:49:07,354 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_4.png (load: 0.062s, inference: 79.997s, write: 0.003s, total: 80.062s)
+2025-03-28 19:49:07,361 - FormulaProcessor - INFO - 
+=== Processing Summary ===
+2025-03-28 19:49:07,361 - FormulaProcessor - INFO - Total processing time: 80.075 seconds
+2025-03-28 19:49:07,362 - FormulaProcessor - INFO - Model initialization time: 8.509 seconds
+2025-03-28 19:49:07,362 - FormulaProcessor - INFO - Total images processed: 30
+2025-03-28 19:49:07,362 - FormulaProcessor - INFO - Failed images: 0
+2025-03-28 19:49:07,363 - FormulaProcessor - INFO - Average time per image: 28.454 seconds
+2025-03-28 19:49:07,363 - FormulaProcessor - INFO - Average image load time: 0.062 seconds
+2025-03-28 19:49:07,363 - FormulaProcessor - INFO - Average inference time: 28.351 seconds
+2025-03-28 19:49:07,364 - FormulaProcessor - INFO - Average file write time: 0.041 seconds
+2025-03-28 19:49:07,364 - FormulaProcessor - INFO - Performance: 0.37 images/second
+2025-03-28 19:49:07,364 - FormulaProcessor - INFO - Parallel processing speedup: 10.66x
+2025-03-28 19:49:07,364 - FormulaProcessor - INFO - Processing complete. Success rate: 100.0%
+2025-03-28 19:49:07,365 - FormulaProcessor - INFO - Total time including setup: 88.589 seconds
+2025-03-28 19:50:55,762 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 19:51:04,573 - FormulaProcessor - INFO - Model initialization: 8.812 seconds
+2025-03-28 19:51:04,576 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 19:51:11,928 - FormulaProcessor - INFO - Model initialization: 7.351 seconds
+2025-03-28 19:53:01,049 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 19:53:08,427 - FormulaProcessor - INFO - Model initialization: 7.378 seconds
+2025-03-28 19:55:42,535 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 19:55:42,535 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:55:42,535 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 19:55:42,536 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 19:55:42,536 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 19:55:59,109 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 19:55:59,109 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:55:59,109 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 19:55:59,110 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 19:55:59,110 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 19:56:06,682 - FormulaProcessor - INFO - Model initialization: 7.572 seconds
+2025-03-28 19:56:06,683 - FormulaProcessor - INFO - Scanning for images in C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 19:56:06,683 - FormulaProcessor - INFO - Found 30 images to process
+2025-03-28 19:56:06,683 - FormulaProcessor - INFO - Processing images in parallel
+2025-03-28 19:56:11,853 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_16.png (load: 0.076s, inference: 5.019s, write: 0.065s, total: 5.160s)
+2025-03-28 19:56:12,213 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_11.png (load: 0.099s, inference: 5.335s, write: 0.090s, total: 5.524s)
+2025-03-28 19:56:12,381 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_13.png (load: 0.081s, inference: 5.456s, write: 0.152s, total: 5.690s)
+2025-03-28 19:56:14,738 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_1.png (load: 0.093s, inference: 7.771s, write: 0.189s, total: 8.053s)
+2025-03-28 19:56:15,004 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_6.png (load: 0.099s, inference: 8.116s, write: 0.101s, total: 8.316s)
+2025-03-28 19:56:15,707 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_10.png (load: 0.089s, inference: 8.822s, write: 0.106s, total: 9.017s)
+2025-03-28 19:56:15,947 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_9.png (load: 0.089s, inference: 9.035s, write: 0.133s, total: 9.256s)
+2025-03-28 19:56:17,136 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_17.png (load: 0.083s, inference: 10.244s, write: 0.115s, total: 10.442s)
+2025-03-28 19:56:17,385 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_8.png (load: 0.121s, inference: 10.492s, write: 0.082s, total: 10.696s)
+2025-03-28 19:56:17,709 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_19.png (load: 0.381s, inference: 4.901s, write: 0.122s, total: 5.404s)
+2025-03-28 19:56:17,889 - FormulaProcessor - INFO - Processed 2501.00663v1_page27_formula_30.png (load: 0.091s, inference: 11.067s, write: 0.046s, total: 11.204s)
+2025-03-28 19:56:18,567 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_21.png (load: 0.314s, inference: 3.406s, write: 0.041s, total: 3.762s)
+2025-03-28 19:56:20,778 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_23.png (load: 0.698s, inference: 4.231s, write: 0.048s, total: 4.978s)
+2025-03-28 19:56:21,770 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_2.png (load: 0.088s, inference: 14.963s, write: 0.034s, total: 15.085s)
+2025-03-28 19:56:22,210 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_25.png (load: 0.117s, inference: 15.366s, write: 0.042s, total: 15.525s)
+2025-03-28 19:56:23,069 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_29.png (load: 0.093s, inference: 16.247s, write: 0.044s, total: 16.384s)
+2025-03-28 19:56:24,755 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_22.png (load: 0.371s, inference: 9.297s, write: 0.017s, total: 9.685s)
+2025-03-28 19:56:25,037 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_15.png (load: 0.108s, inference: 18.234s, write: 0.002s, total: 18.344s)
+2025-03-28 19:56:25,439 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_14.png (load: 0.083s, inference: 18.644s, write: 0.020s, total: 18.746s)
+2025-03-28 19:56:29,682 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_5.png (load: 0.096s, inference: 22.866s, write: 0.032s, total: 22.995s)
+2025-03-28 19:56:30,003 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_28.png (load: 0.121s, inference: 23.180s, write: 0.018s, total: 23.319s)
+2025-03-28 19:56:40,236 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_26.png (load: 0.095s, inference: 33.450s, write: 0.006s, total: 33.551s)
+2025-03-28 19:56:41,019 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_24.png (load: 0.088s, inference: 34.238s, write: 0.009s, total: 34.335s)
+2025-03-28 19:57:26,150 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_27.png (load: 0.101s, inference: 79.348s, write: 0.016s, total: 79.465s)
+2025-03-28 19:57:26,782 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_12.png (load: 0.090s, inference: 79.995s, write: 0.006s, total: 80.091s)
+2025-03-28 19:57:27,199 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_3.png (load: 0.128s, inference: 80.368s, write: 0.017s, total: 80.513s)
+2025-03-28 19:57:27,218 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_4.png (load: 0.083s, inference: 80.446s, write: 0.003s, total: 80.532s)
+2025-03-28 19:57:27,625 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_7.png (load: 0.106s, inference: 80.826s, write: 0.005s, total: 80.937s)
+2025-03-28 19:57:27,891 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_20.png (load: 0.409s, inference: 74.984s, write: 0.003s, total: 75.396s)
+2025-03-28 19:57:27,905 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_18.png (load: 0.259s, inference: 75.736s, write: 0.003s, total: 75.998s)
+2025-03-28 19:57:27,919 - FormulaProcessor - INFO - 
+=== Processing Summary ===
+2025-03-28 19:57:27,919 - FormulaProcessor - INFO - Total processing time: 81.237 seconds
+2025-03-28 19:57:27,919 - FormulaProcessor - INFO - Model initialization time: 7.572 seconds
+2025-03-28 19:57:27,920 - FormulaProcessor - INFO - Total images processed: 30
+2025-03-28 19:57:27,920 - FormulaProcessor - INFO - Failed images: 0
+2025-03-28 19:57:27,920 - FormulaProcessor - INFO - Average time per image: 28.613 seconds
+2025-03-28 19:57:27,921 - FormulaProcessor - INFO - Average image load time: 0.158 seconds
+2025-03-28 19:57:27,921 - FormulaProcessor - INFO - Average inference time: 28.403 seconds
+2025-03-28 19:57:27,921 - FormulaProcessor - INFO - Average file write time: 0.052 seconds
+2025-03-28 19:57:27,921 - FormulaProcessor - INFO - Performance: 0.37 images/second
+2025-03-28 19:57:27,922 - FormulaProcessor - INFO - Parallel processing speedup: 10.57x
+2025-03-28 19:57:27,922 - FormulaProcessor - INFO - Processing complete. Success rate: 100.0%
+2025-03-28 19:57:27,923 - FormulaProcessor - INFO - Total time including setup: 88.813 seconds
+2025-03-28 20:10:13,205 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 20:10:13,205 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 20:10:13,206 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.3\latex_output
+2025-03-28 20:10:13,207 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 20:10:13,208 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 20:10:18,348 - FormulaProcessor - INFO - Model initialization: 5.139 seconds
+2025-03-28 20:15:28,739 - FormulaProcessor - ERROR - An unexpected error occurred: name '__file__' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Hemant.Singhsidar\AppData\Local\Temp\ipykernel_25492\15762837.py", line 4, in main
+    script_dir = Path(__file__).resolve().parent
+NameError: name '__file__' is not defined
+2025-03-28 20:15:28,807 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 20:15:28,808 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 20:15:28,809 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.3\latex_output
+2025-03-28 20:15:28,810 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 20:15:28,811 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 20:15:34,565 - FormulaProcessor - INFO - Model initialization: 5.752 seconds
+2025-03-28 20:17:10,769 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 20:17:10,770 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 20:17:10,771 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 20:17:10,772 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 20:17:10,773 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 20:17:15,345 - FormulaProcessor - INFO - Model initialization: 4.571 seconds
+2025-03-28 20:17:15,347 - FormulaProcessor - ERROR - An unexpected error occurred: 'FormulaProcessor' object has no attribute 'process_batch'
+Traceback (most recent call last):
+  File "C:\Users\Hemant.Singhsidar\AppData\Local\Temp\ipykernel_25492\2120580711.py", line 40, in main
+    stats = process_formulas(
+  File "C:\Users\Hemant.Singhsidar\AppData\Local\Temp\ipykernel_25492\807728413.py", line 13, in process_formulas
+    return processor.process_batch(
+AttributeError: 'FormulaProcessor' object has no attribute 'process_batch'
+2025-03-28 20:21:12,613 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 20:21:12,614 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 20:21:12,615 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 20:21:12,617 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 20:21:12,618 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 20:21:17,966 - FormulaProcessor - INFO - Model initialization: 5.348 seconds
+2025-03-28 20:21:23,156 - FormulaProcessor - INFO - Processing complete. Success rate: 100.0%
+2025-03-28 20:21:23,157 - FormulaProcessor - INFO - Total time including setup: 10.539 seconds
+2025-03-28 20:22:00,449 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 20:22:00,450 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 20:22:00,451 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.3\latex_output
+2025-03-28 20:22:00,452 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 20:22:00,453 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 20:22:05,107 - FormulaProcessor - INFO - Model initialization: 4.653 seconds
+2025-03-28 20:22:09,963 - FormulaProcessor - INFO - Processing complete. Success rate: 100.0%
+2025-03-28 20:22:09,964 - FormulaProcessor - INFO - Total time including setup: 9.510 seconds
+2025-03-28 20:25:22,030 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 20:25:22,031 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 20:25:22,031 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 20:25:22,032 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 20:25:22,033 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 20:25:27,385 - FormulaProcessor - INFO - Model initialization: 5.350 seconds
+2025-03-28 20:25:29,662 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_4.png (load: 0.009s, inference: 2.165s, write: 0.097s, total: 2.271s)
+2025-03-28 20:25:29,965 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_27.png (load: 0.008s, inference: 2.542s, write: 0.027s, total: 2.576s)
+2025-03-28 20:25:29,975 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_26.png (load: 0.015s, inference: 2.541s, write: 0.031s, total: 2.587s)
+2025-03-28 20:25:30,042 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_24.png (load: 0.010s, inference: 2.621s, write: 0.023s, total: 2.654s)
+2025-03-28 20:25:30,346 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_10.png (load: 0.011s, inference: 2.886s, write: 0.054s, total: 2.951s)
+2025-03-28 20:25:30,384 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_15.png (load: 0.011s, inference: 2.877s, write: 0.091s, total: 2.979s)
+2025-03-28 20:25:30,431 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_14.png (load: 0.015s, inference: 2.904s, write: 0.108s, total: 3.026s)
+2025-03-28 20:25:30,467 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_3.png (load: 0.023s, inference: 2.959s, write: 0.096s, total: 3.077s)
+2025-03-28 20:25:30,468 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_2.png (load: 0.017s, inference: 2.971s, write: 0.090s, total: 3.078s)
+2025-03-28 20:25:30,575 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_28.png (load: 0.015s, inference: 3.089s, write: 0.082s, total: 3.186s)
+2025-03-28 20:25:30,627 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_25.png (load: 0.010s, inference: 3.093s, write: 0.136s, total: 3.240s)
+2025-03-28 20:25:30,694 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_17.png (load: 0.009s, inference: 3.206s, write: 0.071s, total: 3.286s)
+2025-03-28 20:25:30,830 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_29.png (load: 0.015s, inference: 3.272s, write: 0.154s, total: 3.441s)
+2025-03-28 20:25:30,839 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_1.png (load: 0.016s, inference: 3.311s, write: 0.123s, total: 3.450s)
+2025-03-28 20:25:30,875 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_16.png (load: 0.012s, inference: 3.386s, write: 0.071s, total: 3.469s)
+2025-03-28 20:25:31,000 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_6.png (load: 0.009s, inference: 3.506s, write: 0.093s, total: 3.608s)
+2025-03-28 20:25:31,006 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_7.png (load: 0.013s, inference: 3.500s, write: 0.100s, total: 3.614s)
+2025-03-28 20:25:31,050 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_9.png (load: 0.009s, inference: 3.528s, write: 0.110s, total: 3.648s)
+2025-03-28 20:25:31,073 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_5.png (load: 0.014s, inference: 3.582s, write: 0.086s, total: 3.682s)
+2025-03-28 20:25:31,090 - FormulaProcessor - INFO - Processed 2501.00663v1_page27_formula_30.png (load: 0.015s, inference: 3.622s, write: 0.064s, total: 3.701s)
+2025-03-28 20:25:31,120 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_11.png (load: 0.008s, inference: 3.643s, write: 0.071s, total: 3.721s)
+2025-03-28 20:25:31,275 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_12.png (load: 0.009s, inference: 3.810s, write: 0.055s, total: 3.874s)
+2025-03-28 20:25:31,281 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_13.png (load: 0.007s, inference: 3.806s, write: 0.066s, total: 3.879s)
+2025-03-28 20:25:31,426 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_8.png (load: 0.014s, inference: 3.978s, write: 0.041s, total: 4.033s)
+2025-03-28 20:25:31,558 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_18.png (load: 0.103s, inference: 1.741s, write: 0.043s, total: 1.887s)
+2025-03-28 20:25:31,633 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_19.png (load: 0.008s, inference: 1.594s, write: 0.033s, total: 1.635s)
+2025-03-28 20:25:31,709 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_20.png (load: 0.012s, inference: 1.690s, write: 0.006s, total: 1.708s)
+2025-03-28 20:25:32,049 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_21.png (load: 0.012s, inference: 1.907s, write: 0.043s, total: 1.962s)
+2025-03-28 20:25:32,085 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_23.png (load: 0.063s, inference: 1.609s, write: 0.001s, total: 1.674s)
+2025-03-28 20:25:32,151 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_22.png (load: 0.136s, inference: 1.660s, write: 0.002s, total: 1.798s)
+2025-03-28 20:25:32,152 - FormulaProcessor - INFO - 
+Processing Summary:
+2025-03-28 20:25:32,154 - FormulaProcessor - INFO - Total images processed: 30
+2025-03-28 20:25:32,155 - FormulaProcessor - INFO - Failed images: 0
+2025-03-28 20:25:32,156 - FormulaProcessor - INFO - Success rate: 100.0%
+2025-03-28 20:25:32,157 - FormulaProcessor - INFO - Total time: 4.767 seconds
+2025-03-28 20:25:32,158 - FormulaProcessor - INFO - Average time per image: 0.159 seconds
+2025-03-28 20:25:32,159 - FormulaProcessor - INFO - Parallel processing speedup: 18.82x
+2025-03-28 20:25:32,160 - FormulaProcessor - INFO - Processing complete!
+2025-03-28 20:25:32,160 - FormulaProcessor - INFO - Total time including setup: 10.127 seconds
+2025-03-28 20:25:32,184 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 20:25:32,185 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 20:25:32,186 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 20:25:32,188 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 20:25:32,189 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 20:25:37,114 - FormulaProcessor - INFO - Model initialization: 4.923 seconds
+2025-03-28 20:25:39,723 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_6.png (load: 0.009s, inference: 2.579s, write: 0.011s, total: 2.599s)
+2025-03-28 20:25:39,869 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_24.png (load: 0.004s, inference: 2.747s, write: 0.002s, total: 2.753s)
+2025-03-28 20:25:40,071 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_9.png (load: 0.004s, inference: 2.918s, write: 0.018s, total: 2.940s)
+2025-03-28 20:25:40,244 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_7.png (load: 0.006s, inference: 3.060s, write: 0.053s, total: 3.119s)
+2025-03-28 20:25:40,255 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_13.png (load: 0.008s, inference: 3.056s, write: 0.062s, total: 3.126s)
+2025-03-28 20:25:40,390 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_17.png (load: 0.006s, inference: 3.089s, write: 0.159s, total: 3.255s)
+2025-03-28 20:25:40,473 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_14.png (load: 0.010s, inference: 3.266s, write: 0.066s, total: 3.342s)
+2025-03-28 20:25:40,486 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_3.png (load: 0.014s, inference: 3.274s, write: 0.077s, total: 3.365s)
+2025-03-28 20:25:40,497 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_27.png (load: 0.004s, inference: 3.287s, write: 0.089s, total: 3.380s)
+2025-03-28 20:25:40,510 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_11.png (load: 0.010s, inference: 3.295s, write: 0.077s, total: 3.382s)
+2025-03-28 20:25:40,573 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_28.png (load: 0.010s, inference: 3.377s, write: 0.068s, total: 3.455s)
+2025-03-28 20:25:40,585 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_2.png (load: 0.010s, inference: 3.393s, write: 0.062s, total: 3.465s)
+2025-03-28 20:25:40,595 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_15.png (load: 0.010s, inference: 3.384s, write: 0.069s, total: 3.462s)
+2025-03-28 20:25:40,617 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_12.png (load: 0.004s, inference: 3.427s, write: 0.057s, total: 3.489s)
+2025-03-28 20:25:40,625 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_8.png (load: 0.009s, inference: 3.415s, write: 0.075s, total: 3.499s)
+2025-03-28 20:25:40,648 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_5.png (load: 0.008s, inference: 3.406s, write: 0.113s, total: 3.526s)
+2025-03-28 20:25:40,648 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_10.png (load: 0.006s, inference: 3.493s, write: 0.023s, total: 3.521s)
+2025-03-28 20:25:40,723 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_25.png (load: 0.007s, inference: 3.585s, write: 0.015s, total: 3.607s)
+2025-03-28 20:25:40,735 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_29.png (load: 0.005s, inference: 3.610s, write: 0.002s, total: 3.617s)
+2025-03-28 20:25:40,745 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_16.png (load: 0.007s, inference: 3.594s, write: 0.010s, total: 3.611s)
+2025-03-28 20:25:40,746 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_1.png (load: 0.006s, inference: 3.595s, write: 0.026s, total: 3.627s)
+2025-03-28 20:25:40,889 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_26.png (load: 0.004s, inference: 3.744s, write: 0.024s, total: 3.772s)
+2025-03-28 20:25:40,914 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_4.png (load: 0.006s, inference: 3.773s, write: 0.015s, total: 3.793s)
+2025-03-28 20:25:40,998 - FormulaProcessor - INFO - Processed 2501.00663v1_page27_formula_30.png (load: 0.006s, inference: 3.854s, write: 0.020s, total: 3.880s)
+2025-03-28 20:25:41,628 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_18.png (load: 0.017s, inference: 1.786s, write: 0.091s, total: 1.894s)
+2025-03-28 20:25:41,703 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_19.png (load: 0.025s, inference: 1.759s, write: 0.039s, total: 1.823s)
+2025-03-28 20:25:41,878 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_20.png (load: 0.089s, inference: 1.701s, write: 0.003s, total: 1.793s)
+2025-03-28 20:25:41,888 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_22.png (load: 0.003s, inference: 1.618s, write: 0.002s, total: 1.622s)
+2025-03-28 20:25:41,891 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_23.png (load: 0.093s, inference: 1.389s, write: 0.003s, total: 1.486s)
+2025-03-28 20:25:41,964 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_21.png (load: 0.138s, inference: 1.560s, write: 0.003s, total: 1.701s)
+2025-03-28 20:25:41,967 - FormulaProcessor - INFO - 
+Processing Summary:
+2025-03-28 20:25:41,968 - FormulaProcessor - INFO - Total images processed: 30
+2025-03-28 20:25:41,969 - FormulaProcessor - INFO - Failed images: 0
+2025-03-28 20:25:41,970 - FormulaProcessor - INFO - Success rate: 100.0%
+2025-03-28 20:25:41,971 - FormulaProcessor - INFO - Total time: 4.852 seconds
+2025-03-28 20:25:41,972 - FormulaProcessor - INFO - Average time per image: 0.162 seconds
+2025-03-28 20:25:41,972 - FormulaProcessor - INFO - Parallel processing speedup: 18.94x
+2025-03-28 20:25:41,974 - FormulaProcessor - INFO - Processing complete!
+2025-03-28 20:25:41,974 - FormulaProcessor - INFO - Total time including setup: 9.784 seconds
+2025-03-28 20:26:48,851 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 20:26:48,852 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 20:26:48,854 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 20:26:48,854 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 20:26:48,855 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 20:26:53,399 - FormulaProcessor - INFO - Model initialization: 4.542 seconds
+2025-03-28 20:26:56,394 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_24.png (load: 0.009s, inference: 2.864s, write: 0.120s, total: 2.992s)
+2025-03-28 20:26:56,616 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_16.png (load: 0.011s, inference: 3.119s, write: 0.066s, total: 3.196s)
+2025-03-28 20:26:56,703 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_3.png (load: 0.023s, inference: 3.149s, write: 0.127s, total: 3.300s)
+2025-03-28 20:26:56,713 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_28.png (load: 0.014s, inference: 3.199s, write: 0.097s, total: 3.311s)
+2025-03-28 20:26:56,735 - FormulaProcessor - INFO - Processed 2501.00663v1_page26_formula_29.png (load: 0.007s, inference: 3.320s, write: 0.005s, total: 3.333s)
+2025-03-28 20:26:56,770 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_27.png (load: 0.006s, inference: 3.294s, write: 0.068s, total: 3.368s)
+2025-03-28 20:26:56,810 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_2.png (load: 0.013s, inference: 3.345s, write: 0.048s, total: 3.407s)
+2025-03-28 20:26:56,821 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_26.png (load: 0.008s, inference: 3.398s, write: 0.014s, total: 3.420s)
+2025-03-28 20:26:56,902 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_17.png (load: 0.010s, inference: 3.425s, write: 0.046s, total: 3.481s)
+2025-03-28 20:26:56,983 - FormulaProcessor - INFO - Processed 2501.00663v1_page27_formula_30.png (load: 0.012s, inference: 3.522s, write: 0.046s, total: 3.580s)
+2025-03-28 20:26:57,009 - FormulaProcessor - INFO - Processed 2501.00663v1_page3_formula_1.png (load: 0.008s, inference: 3.565s, write: 0.032s, total: 3.606s)
+2025-03-28 20:26:57,175 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_4.png (load: 0.013s, inference: 3.657s, write: 0.101s, total: 3.770s)
+2025-03-28 20:26:57,221 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_10.png (load: 0.010s, inference: 3.749s, write: 0.052s, total: 3.811s)
+2025-03-28 20:26:57,255 - FormulaProcessor - INFO - Processed 2501.00663v1_page4_formula_5.png (load: 0.012s, inference: 3.772s, write: 0.065s, total: 3.849s)
+2025-03-28 20:26:57,357 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_6.png (load: 0.010s, inference: 3.886s, write: 0.054s, total: 3.950s)
+2025-03-28 20:26:57,433 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_11.png (load: 0.008s, inference: 3.986s, write: 0.027s, total: 4.021s)
+2025-03-28 20:26:57,482 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_7.png (load: 0.007s, inference: 4.045s, write: 0.021s, total: 4.074s)
+2025-03-28 20:26:57,512 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_12.png (load: 0.008s, inference: 4.048s, write: 0.041s, total: 4.097s)
+2025-03-28 20:26:57,582 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_9.png (load: 0.009s, inference: 4.136s, write: 0.020s, total: 4.165s)
+2025-03-28 20:26:57,625 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_25.png (load: 0.008s, inference: 4.206s, write: 0.011s, total: 4.224s)
+2025-03-28 20:26:57,644 - FormulaProcessor - INFO - Processed 2501.00663v1_page5_formula_8.png (load: 0.012s, inference: 4.193s, write: 0.030s, total: 4.235s)
+2025-03-28 20:26:57,654 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_14.png (load: 0.012s, inference: 4.126s, write: 0.099s, total: 4.236s)
+2025-03-28 20:26:57,782 - FormulaProcessor - INFO - Processed 2501.00663v1_page6_formula_13.png (load: 0.008s, inference: 4.291s, write: 0.067s, total: 4.366s)
+2025-03-28 20:26:57,989 - FormulaProcessor - INFO - Processed 2501.00663v1_page7_formula_15.png (load: 0.017s, inference: 4.498s, write: 0.055s, total: 4.571s)
+2025-03-28 20:26:58,372 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_19.png (load: 0.042s, inference: 1.661s, write: 0.033s, total: 1.736s)
+2025-03-28 20:26:58,476 - FormulaProcessor - INFO - Processed 2501.00663v1_page8_formula_18.png (load: 0.063s, inference: 1.991s, write: 0.003s, total: 2.057s)
+2025-03-28 20:26:58,530 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_23.png (load: 0.055s, inference: 1.688s, write: 0.003s, total: 1.746s)
+2025-03-28 20:26:58,587 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_21.png (load: 0.095s, inference: 1.763s, write: 0.002s, total: 1.860s)
+2025-03-28 20:26:58,603 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_20.png (load: 0.097s, inference: 1.780s, write: 0.002s, total: 1.879s)
+2025-03-28 20:26:58,619 - FormulaProcessor - INFO - Processed 2501.00663v1_page9_formula_22.png (load: 0.045s, inference: 1.813s, write: 0.001s, total: 1.860s)
+2025-03-28 20:26:58,621 - FormulaProcessor - INFO - 
+Processing Summary:
+2025-03-28 20:26:58,622 - FormulaProcessor - INFO - Total images processed: 30
+2025-03-28 20:26:58,623 - FormulaProcessor - INFO - Failed images: 0
+2025-03-28 20:26:58,624 - FormulaProcessor - INFO - Success rate: 100.0%
+2025-03-28 20:26:58,625 - FormulaProcessor - INFO - Total time: 5.221 seconds
+2025-03-28 20:26:58,626 - FormulaProcessor - INFO - Average time per image: 0.174 seconds
+2025-03-28 20:26:58,627 - FormulaProcessor - INFO - Parallel processing speedup: 19.44x
+2025-03-28 20:26:58,628 - FormulaProcessor - INFO - Processing complete!
+2025-03-28 20:26:58,629 - FormulaProcessor - INFO - Total time including setup: 9.772 seconds
+2025-03-28 20:26:58,648 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 20:26:58,649 - FormulaProcessor - INFO - Using input folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 20:26:58,650 - FormulaProcessor - INFO - Output folder: C:\Users\Hemant.Singhsidar\Desktop\Unstructured backup\TEST RESULT 1.2\latex_output
+2025-03-28 20:26:58,652 - FormulaProcessor - INFO - Found 30 images in input folder
+2025-03-28 20:26:58,653 - FormulaProcessor - INFO - Initializing model and processor (breezedeus/pix2text-mfr)...
+2025-03-28 20:27:03,380 - FormulaProcessor - INFO - Model initialization: 4.726 seconds
+2025-03-28 20:27:06,279 - FormulaProcessor - INFO - Processed 2501.00663v1_page10_formula_25.png (load: 0.008s, inference: 2.811s, write: 0.078s, total: 2.897s)
+2025-03-28 20:30:35,008 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 20:30:35,008 - FormulaProcessor - ERROR - No valid input folder found! Tried:
+2025-03-28 20:30:35,009 - FormulaProcessor - ERROR -   - C:\Users\YourUsername\YourPath\Unstructured-Methods-1.0\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 20:30:35,010 - FormulaProcessor - ERROR - Please ensure one of these directories exists with formula images
+2025-03-28 20:31:19,854 - FormulaProcessor - INFO - Starting formula processing...
+2025-03-28 20:31:19,854 - FormulaProcessor - ERROR - No valid input folder found! Tried:
+2025-03-28 20:31:19,855 - FormulaProcessor - ERROR -   - C:\Users\YourUsername\YourPath\Cropped_Elements\2501.00663v1\Formula
+2025-03-28 20:31:19,856 - FormulaProcessor - ERROR - Please ensure one of these directories exists with formula images
