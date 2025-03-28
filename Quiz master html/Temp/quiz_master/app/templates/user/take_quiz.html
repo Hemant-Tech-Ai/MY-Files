@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}{{ quiz.chapter.name }} Quiz{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="mb-4">{{ quiz.chapter.name }} Quiz</h2>
+        </div>
+        <div class="col-md-4 text-end">
+            <div id="timer" class="h3 text-danger"></div>
+        </div>
+    </div>
+
+    <form id="quizForm">
+        {% for question in quiz.questions %}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Question {{ loop.index }}</h5>
+                <p class="card-text">{{ question.question_statement }}</p>
+                
+                <div class="options">
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" 
+                               name="question_{{ question.id }}" value="1" required>
+                        <label class="form-check-label">{{ question.option1 }}</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" 
+                               name="question_{{ question.id }}" value="2">
+                        <label class="form-check-label">{{ question.option2 }}</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" 
+                               name="question_{{ question.id }}" value="3">
+                        <label class="form-check-label">{{ question.option3 }}</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" 
+                               name="question_{{ question.id }}" value="4">
+                        <label class="form-check-label">{{ question.option4 }}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary btn-lg">Submit Quiz</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Timer functionality
+    let timeLeft = {{ time_limit }} * 60; // Convert to seconds
+    const timerDisplay = document.getElementById('timer');
+    
+    const timer = setInterval(function() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            submitQuiz();
+        }
+        timeLeft--;
+    }, 1000);
+
+    // Form submission
+    const form = document.getElementById('quizForm');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        submitQuiz();
+    });
+
+    function submitQuiz() {
+        const answers = {};
+        const radioButtons = form.querySelectorAll('input[type="radio"]:checked');
+        
+        radioButtons.forEach(radio => {
+            const questionId = radio.name.split('_')[1];
+            answers[questionId] = radio.value;
+        });
+
+        fetch('{{ url_for("user.submit_quiz", attempt_id=attempt.id) }}', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(answers)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.redirect) {
+                window.location.href = data.redirect;
+            }
+        });
+    }
+});
+</script>
+{% endblock %} 

@@ -1,0 +1,18 @@
+Neural Memory Contextual Memory Learning — ——_> @®— Core In-context Learning Learnable Data-Independent Weights Persistent Memory Fixed
+Test Time
+Figure 4: Memory as a Gate (MAG) Architecture. This architecture, similarly, has the three branches of (1) core, (2) contextual memory, and (3) persistent memory. It, however, incorporates only persistent memory into the context and combine memory with the core branch using a gating mechanism. At test time, the behavior is the same as Figure 2.
+the long-term memory to store only useful information from the current context. That is, not all tokens in each segment are useful and memorizing all of them can result in memory overflow. Therefore, attention is helping the memory to understand which information is useful, better managing the memory capacity. (3) At test time: (i) persistent memory parameters are fixed as they encodes the knowledge about the task, which should not be changed; (ii) the attention module weights are in-context learner; and (iii) the long-term memory module is still learning (memorizing) the information at test time. That is, we update the weights of the neural memory even at test time as weights are encoding the abstraction of long past.
+4.2 Gated Memory
+In the next variant (see Figure 4), in one branch, we directly use the input data to update the long-term memory, and in the second branch, we use a sliding window attention (SWA):
+X= [pi po --- pnp Il x (26)
+SW-Attn*
+y= (x), (27) 0=y@ M(x), (28)
+where SW-Attn* is sliding window attention with prefix (see Figure 3b). Note that, contrary to the previous design, we are not segmenting the input data. Also, we abuse the notation and use M(x) to refer to the final output of the memory after all recursion over the tokens of the sequence. In the above equation, ® can be any non-linear gating. In our experiments, we normalize the outputs y and M(x) using learnable vector-valued weights, followed by a non-linearity o(.).
+The overall attention mask of this design is shown in Figure 3b. In this design, sliding window attention is act as a precise short-term memory, while the neural memory module is acting as a fading memory for the model. This architecture design can also be seen as a multi-head architecture where the structure of heads are different (X. Dong et al. 2024).
+4.3. Memory as a Layer
+The last variant uses the neural Memory As a Layer (MAL) of a deep neural network (see Figure 5). This architecture design is more common in the literature, where the hybrid models stack recurrent models with full or sliding window attentions. Given input x, we have:
+X= [pi po --- pn,| Il x (29)
+y= M(x),
+o = SW-Attn(y), (31)
+10
+(30)

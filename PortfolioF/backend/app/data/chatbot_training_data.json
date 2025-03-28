@@ -1,0 +1,183 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "How are you",
+        "Good day",
+        "What's up"
+      ],
+      "responses": [
+        "👋 Hello! I'm your AI assistant for Hemant's portfolio. I can help you learn about his skills, projects, experience, and more. What would you like to know?",
+        "Hi there! 👋 I'm here to help you explore Hemant's portfolio. I can tell you about his technical skills, projects, work experience, or how to get in touch. What interests you?",
+        "Hey! 😊 Welcome to Hemant's portfolio. I can share information about his development expertise, projects, professional background, or help you connect with him. What would you like to explore?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Take care",
+        "Exit",
+        "Quit"
+      ],
+      "responses": [
+        "Goodbye! Feel free to return if you have more questions about Hemant's work. 👋",
+        "See you later! Thanks for exploring Hemant's portfolio. Don't hesitate to come back! 😊",
+        "Take care! Feel free to return anytime to learn more about Hemant's projects and experience. 👋"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "That's helpful",
+        "Appreciate it",
+        "Thanks for the help"
+      ],
+      "responses": [
+        "You're welcome! 😊 Is there anything else you'd like to know about Hemant's work?",
+        "Happy to help! 🌟 Let me know if you have other questions about Hemant's skills or projects.",
+        "My pleasure! 😊 Feel free to ask about any other aspect of Hemant's portfolio."
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "Who are you",
+        "Tell me about yourself",
+        "What do you do",
+        "About you",
+        "Your background",
+        "Tell me about Hemant"
+      ],
+      "responses": [
+        "Hemant Singh Sidar is a passionate Full Stack Developer and AI Enthusiast. He specializes in building modern web applications using React, Node.js, Python, and FastAPI. His focus is on creating clean, efficient, and user-friendly software solutions that leverage cutting-edge technologies. 🚀",
+        "Hemant is a skilled software engineer who combines expertise in full-stack development with a deep interest in AI/ML technologies. He's dedicated to crafting exceptional digital experiences that blend technical excellence with intuitive design. 💻"
+      ],
+      "context": {
+        "type": "about"
+      }
+    },
+    {
+      "tag": "skills",
+      "patterns": [
+        "What are your skills",
+        "Technical skills",
+        "What technologies do you know",
+        "Programming languages",
+        "Frameworks",
+        "Tools",
+        "What can you do"
+      ],
+      "responses": [
+        "Hemant has a diverse skill set in modern web technologies. His core skills include: \n• Frontend: React, JavaScript/TypeScript, HTML5/CSS3\n• Backend: Python, Node.js, FastAPI\n• Databases: PostgreSQL, MongoDB\n• AI/ML: TensorFlow, PyTorch\n• DevOps: Docker, Git\n\nHe's particularly strong in building full-stack applications with AI integration. 🛠️",
+        "Hemant's technical expertise spans both frontend and backend development. He's proficient in:\n• Web Development: React, JavaScript, Python\n• API Development: FastAPI, Node.js\n• Database Management: SQL & NoSQL\n• AI/ML Development\n• Cloud Technologies\n\nHe continuously learns and adapts to new technologies. 💡"
+      ],
+      "context": {
+        "type": "skills"
+      }
+    },
+    {
+      "tag": "projects",
+      "patterns": [
+        "What projects have you worked on",
+        "Show me your projects",
+        "Portfolio projects",
+        "Your work",
+        "Project examples",
+        "Recent projects"
+      ],
+      "responses": [
+        "Hemant has worked on several innovative projects, including:\n\n1. This Portfolio Website: A modern React application with AI chatbot integration\n2. [Other Project Name]: Brief description\n3. [Another Project]: Brief description\n\nEach project showcases his ability to create robust, user-friendly applications. Would you like to know more about any specific project? 🚀",
+        "Here are some highlights from Hemant's project portfolio:\n\n1. Portfolio Website: Features React, FastAPI, and AI integration\n2. [Project Name]: Key features and technologies\n3. [Project Name]: Main highlights\n\nYou can find more details in the Projects section. Which project interests you? 💻"
+      ],
+      "context": {
+        "type": "projects"
+      }
+    },
+    {
+      "tag": "experience",
+      "patterns": [
+        "Work experience",
+        "Where have you worked",
+        "Previous jobs",
+        "Employment history",
+        "Career"
+      ],
+      "responses": [
+        "I have experience working at companies like Google and Microsoft. At Google, I led a team developing cloud-based solutions, and at Microsoft, I worked on the Azure platform. You can find more details in the Resume section.",
+        "My professional experience includes roles at Google as a Senior Software Engineer and at Microsoft as a Software Engineer. I've also completed an internship at Facebook. Details about my responsibilities and achievements are available in the Resume section."
+      ],
+      "context": {
+        "type": "experience"
+      }
+    },
+    {
+      "tag": "education",
+      "patterns": [
+        "Education background",
+        "Where did you study",
+        "Academic background",
+        "Degrees",
+        "University"
+      ],
+      "responses": [
+        "I hold a Master of Science in Computer Science from Stanford University and a Bachelor of Science in Computer Science from UC Berkeley. My academic focus was on Artificial Intelligence and Machine Learning.",
+        "I studied Computer Science at Stanford University (Master's) and UC Berkeley (Bachelor's). During my studies, I specialized in AI and Machine Learning and completed a thesis on Deep Learning Applications in NLP."
+      ],
+      "context": {
+        "type": "education"
+      }
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact you",
+        "Contact information",
+        "Email address",
+        "Get in touch",
+        "Reach out",
+        "Social media",
+        "Links",
+        "Connect with you"
+      ],
+      "responses": [
+        "You can connect with Hemant through various platforms:\n\n• X (Twitter): @hemantsinghsidar\n• LinkedIn: /in/hemantsinghsidar\n• GitHub: /hemantsinghsidar\n• Reddit: /user/hemantsinghsidar\n• Hugging Face: /hemantsinghsidar\n\nYou can also use the Contact form on this website to send him a direct message. 📫",
+        "Here's how you can reach Hemant:\n\n• Professional: LinkedIn (/in/hemantsinghsidar)\n• Code: GitHub (/hemantsinghsidar)\n• Social: X (@hemantsinghsidar), Reddit\n• AI/ML: Hugging Face\n\nFeel free to connect on any platform or use the Contact form! 🤝"
+      ],
+      "context": {
+        "type": "contact"
+      }
+    },
+    {
+      "tag": "resume",
+      "patterns": [
+        "Can I see your resume",
+        "Where is your resume",
+        "Download resume",
+        "CV",
+        "Curriculum vitae"
+      ],
+      "responses": [
+        "You can download Hemant's resume directly from the website by clicking the 'Resume' button in the navigation bar. It's available in PDF format for easy viewing and printing. 📄",
+        "Hemant's detailed resume is available for download through the 'Resume' button in the top navigation. It includes his complete professional background and technical expertise. 📝"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not sure I understand. Would you like to know about Hemant's skills, projects, or experience? Or maybe I can help you find something specific? 🤔",
+        "I didn't quite catch that. I can tell you about Hemant's technical skills, projects, or help you get in touch with him. What would you like to know? 💭",
+        "I'm still learning and might have missed your question. Would you like to know about Hemant's work, skills, or how to contact him? 🎯"
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0A192F" />
+    <meta
+      name="description"
+      content="John Doe's Portfolio - Senior Software Engineer"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>John Doe | Senior Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Hide any select elements and theme toggles that might be injected by browser extensions */
+      body > div:first-child > select,
+      body > div:first-child > div > select,
+      body > select,
+      body > div[style*="position: fixed"][style*="top: 0"][style*="left: 0"],
+      body > div[style*="position:fixed"][style*="top:0"][style*="left:0"] {
+        display: none !important;
+      }
+    </style>
+    <!-- Initialize theme before page load to prevent flash -->
+    <script>
+      (function() {
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        
+        // Apply theme based on saved preference or system preference
+        if (savedTheme === 'dark' || 
+            (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+        
+        // Log for debugging
+        console.log('Initial theme set to:', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html> 

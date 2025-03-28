@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz Results{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Quiz Results</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>{{ attempt.quiz.chapter.subject.name }}</h4>
+                    <h5 class="text-muted">{{ attempt.quiz.chapter.name }}</h5>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h4>Score: {{ attempt.score }}/{{ attempt.total_questions }}</h4>
+                    <h5 class="text-muted">
+                        Percentage: {{ "%.1f"|format(attempt.score/attempt.total_questions * 100) }}%
+                    </h5>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Performance Summary -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">Time Taken</h6>
+                            <p class="card-text h4">
+                                {{ ((attempt.completed_at - attempt.started_at).total_seconds()/60)|round|int }} minutes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">Correct Answers</h6>
+                            <p class="card-text h4">{{ attempt.score }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <h6 class="card-title">Incorrect Answers</h6>
+                            <p class="card-text h4">{{ attempt.total_questions - attempt.score }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Chart -->
+            <div class="mb-4">
+                <canvas id="resultChart"></canvas>
+            </div>
+
+            <!-- Share Results -->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary" onclick="shareResults()">
+                    <i class="fas fa-share-alt"></i> Share Results
+                </button>
+                <a href="{{ url_for('user.dashboard') }}" class="btn btn-secondary">
+                    Return to Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Create doughnut chart for results
+    const ctx = document.getElementById('resultChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Correct', 'Incorrect'],
+            datasets: [{
+                data: [{{ attempt.score }}, {{ attempt.total_questions - attempt.score }}],
+                backgroundColor: ['#28a745', '#dc3545']
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }
+    });
+});
+
+function shareResults() {
+    const text = `I scored ${{{ attempt.score }}}/${{{ attempt.total_questions }}} ({{ "%.1f"|format(attempt.score/attempt.total_questions * 100) }}%) on ${{{ attempt.quiz.chapter.name|tojson }}} quiz!`;
+    
+    if (navigator.share) {
+        navigator.share({
+            title: 'My Quiz Results',
+            text: text
+        });
+    } else {
+        // Fallback to copying to clipboard
+        navigator.clipboard.writeText(text)
+            .then(() => alert('Results copied to clipboard!'))
+            .catch(err => console.error('Failed to copy text: ', err));
+    }
+}
+</script>
+{% endblock %} 

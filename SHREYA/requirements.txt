@@ -1,0 +1,30 @@
+# Flask and extensions
+Flask
+python-dotenv
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-JWT-Extended
+Flask-CORS
+Flask-APScheduler
+Flask-Caching
+
+# Database
+SQLAlchemy
+
+# Development and deployment
+Werkzeug
+gunicorn
+
+# Email handling
+email-validator
+
+# Datetime handling
+pytz
+
+# REST API and HTTP requests
+requests
+# Environment variable management
+python-dotenv
+
+# Security
+PyJWT

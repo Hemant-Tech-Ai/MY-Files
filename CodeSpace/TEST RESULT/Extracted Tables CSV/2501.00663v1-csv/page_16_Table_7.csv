@@ -1,0 +1,9 @@
+Model,Enhancer Cohn,Enhancer Ens,Human Reg.,Non-TATA Promoters,Human OCR En
+CNN,69.5,68.9,93.3,84.6,68.0
+DNABERT,74.0,85.7,88.1,85.6,75.1
+GPT,70.5,83.5,91.5,87.7,73.0
+HyenaDNA,74.2,89.2,93.8,96.6,80.9
+Transformer++,73.4,89.5,89.9,94.4,79.5
+Mamba,73.0,1,1,96.6,-
+Based,74.6,89.5,89.5,96.8,79.0
+Neural Memory Module,75.2,89.6,89.3,96.6,79.9

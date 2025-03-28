@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}Add Question - {{ quiz.chapter.name }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="mb-4">Add Question to {{ quiz.chapter.name }}</h2>
+    
+    <div class="card">
+        <div class="card-body">
+            <form method="POST" id="questionForm">
+                <div class="mb-3">
+                    <label for="question_statement" class="form-label">Question</label>
+                    <textarea class="form-control" id="question_statement" 
+                             name="question_statement" rows="3" required></textarea>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="marks" class="form-label">Marks</label>
+                    <input type="number" class="form-control" id="marks" 
+                           name="marks" value="1" min="1" required>
+                </div>
+                
+                <div id="optionsContainer">
+                    <label class="form-label">Options</label>
+                    {% for i in range(4) %}
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <input type="radio" name="correct_option" 
+                                       value="{{ i }}" required 
+                                       {% if i == 0 %}checked{% endif %}>
+                            </div>
+                            <input type="text" class="form-control" 
+                                   name="options[]" required 
+                                   placeholder="Option {{ i + 1 }}">
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Add Question</button>
+                    <a href="{{ url_for('admin.manage_questions', quiz_id=quiz.id) }}" 
+                       class="btn btn-secondary">Back to Questions</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('questionForm');
+    
+    form.addEventListener('submit', function(e) {
+        const options = document.querySelectorAll('input[name="options[]"]');
+        let hasEmptyOption = false;
+        
+        options.forEach(option => {
+            if (!option.value.trim()) {
+                hasEmptyOption = true;
+            }
+        });
+        
+        if (hasEmptyOption) {
+            e.preventDefault();
+            alert('Please fill in all options');
+        }
+    });
+});
+</script>
+{% endblock %} 

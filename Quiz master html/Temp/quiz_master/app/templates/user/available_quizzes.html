@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Available Quizzes{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="mb-4">Available Quizzes</h2>
+    
+    <!-- Subject Filter -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <form method="GET" class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="subject_id" class="col-form-label">Filter by Subject:</label>
+                </div>
+                <div class="col-auto">
+                    <select class="form-select" id="subject_id" name="subject_id">
+                        <option value="">All Subjects</option>
+                        {% for subject in subjects %}
+                        <option value="{{ subject.id }}" 
+                                {% if selected_subject == subject.id %}selected{% endif %}>
+                            {{ subject.name }}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quizzes Grid -->
+    <div class="row">
+        {% for quiz in quizzes %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{ quiz.chapter.subject.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ quiz.chapter.name }}</h6>
+                    <p class="card-text">
+                        <strong>Date:</strong> {{ quiz.date_of_quiz.strftime('%Y-%m-%d') }}<br>
+                        <strong>Time:</strong> {{ quiz.date_of_quiz.strftime('%I:%M %p') }}<br>
+                        <strong>Duration:</strong> {{ quiz.time_duration }} minutes<br>
+                        <strong>Questions:</strong> {{ quiz.questions|length }}
+                    </p>
+                    {% if quiz.date_of_quiz.date() == today.date() %}
+                    <a href="{{ url_for('user.start_quiz', quiz_id=quiz.id) }}" 
+                       class="btn btn-success">Start Quiz</a>
+                    {% else %}
+                    <button class="btn btn-secondary" disabled>
+                        Available on {{ quiz.date_of_quiz.strftime('%Y-%m-%d') }}
+                    </button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-12">
+            <div class="alert alert-info">
+                No quizzes available at the moment.
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Prevent form resubmission on refresh
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+});
+</script>
+{% endblock %} 

@@ -1,0 +1,199 @@
+{% extends "quiz/base_quiz.html" %}
+
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{{ url_for('quiz.list_chapters', subject_id=quiz.chapter.subject.id) }}">{{ quiz.chapter.subject.name }}</a></li>
+<li class="breadcrumb-item"><a href="{{ url_for('quiz.list_quizzes', chapter_id=quiz.chapter.id) }}">{{ quiz.chapter.name }}</a></li>
+<li class="breadcrumb-item active">{{ quiz.title }}</li>
+{% endblock %}
+
+{% block quiz_content %}
+<div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h4 class="mb-0">{{ quiz.title }}</h4>
+        <div id="quiz-timer" class="text-primary">Time: 00:00</div>
+    </div>
+    <div class="card-body">
+        <form id="quiz-form">
+            {% for question in questions %}
+            <div class="question-container mb-4" data-question-id="{{ question.id }}">
+                <h5 class="question-text">{{ loop.index }}. {{ question.text }}</h5>
+                <div class="options-container">
+                    {% for option in question.options.split('|') %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" 
+                               name="question_{{ question.id }}" 
+                               id="option_{{ question.id }}_{{ loop.index }}"
+                               value="{{ option }}"
+                               required>
+                        <label class="form-check-label" for="option_{{ question.id }}_{{ loop.index }}">
+                            {{ option }}
+                        </label>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="feedback mt-2" style="display: none;"></div>
+            </div>
+            {% endfor %}
+            
+            <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                <button type="button" class="btn btn-primary" id="next-btn">Next</button>
+                <button type="submit" class="btn btn-success" id="submit-btn" style="display: none;">Finish Quiz</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="loading-overlay" style="display: none;" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center">
+    <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<div id="toast-container" class="position-fixed bottom-0 end-0 p-3"></div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script>
+    let currentQuestion = 0;
+    const questions = document.querySelectorAll('.question-container');
+    const startTime = new Date();
+    let timerInterval;
+    
+    // Show only the first question initially
+    showQuestion(0);
+    updateNavigationButtons();
+    startTimer();
+    
+    function showQuestion(index) {
+        questions.forEach((q, i) => {
+            q.style.display = i === index ? 'block' : 'none';
+        });
+        currentQuestion = index;
+        updateNavigationButtons();
+    }
+    
+    function updateNavigationButtons() {
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const submitBtn = document.getElementById('submit-btn');
+        
+        prevBtn.disabled = currentQuestion === 0;
+        
+        if (currentQuestion === questions.length - 1) {
+            nextBtn.style.display = 'none';
+            submitBtn.style.display = 'block';
+        } else {
+            nextBtn.style.display = 'block';
+            submitBtn.style.display = 'none';
+        }
+    }
+    
+    function startTimer() {
+        timerInterval = setInterval(() => {
+            const now = new Date();
+            const diff = Math.floor((now - startTime) / 1000);
+            const minutes = Math.floor(diff / 60).toString().padStart(2, '0');
+            const seconds = (diff % 60).toString().padStart(2, '0');
+            document.getElementById('quiz-timer').textContent = `Time: ${minutes}:${seconds}`;
+        }, 1000);
+    }
+    
+    document.getElementById('prev-btn').addEventListener('click', () => {
+        if (currentQuestion > 0) {
+            showQuestion(currentQuestion - 1);
+        }
+    });
+    
+    document.getElementById('next-btn').addEventListener('click', async () => {
+        if (currentQuestion < questions.length - 1) {
+            const success = await submitCurrentAnswer();
+            if (success) {
+                showQuestion(currentQuestion + 1);
+            }
+        }
+    });
+    
+    async function submitCurrentAnswer() {
+        const questionContainer = questions[currentQuestion];
+        const questionId = questionContainer.dataset.questionId;
+        const selectedOption = questionContainer.querySelector('input[type="radio"]:checked');
+        
+        if (!selectedOption) {
+            showToast('Please select an answer before proceeding', 'warning');
+            return false;
+        }
+        
+        showLoading();
+        
+        try {
+            const response = await fetch(`/quiz/attempt/{{ attempt.id }}/submit`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    question_id: questionId,
+                    answer: selectedOption.value
+                })
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                const feedback = questionContainer.querySelector('.feedback');
+                feedback.style.display = 'block';
+                feedback.className = `feedback mt-2 alert alert-${data.is_correct ? 'success' : 'danger'}`;
+                feedback.textContent = data.is_correct ? 
+                    `Correct! You earned ${data.points} points.` : 
+                    'Incorrect answer. Keep trying!';
+                return true;
+            }
+            return false;
+        } catch (error) {
+            showToast('Error submitting answer. Please try again.', 'danger');
+            return false;
+        } finally {
+            hideLoading();
+        }
+    }
+    
+    document.getElementById('quiz-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // Check if all questions are answered
+        const unansweredQuestions = Array.from(questions).filter(q => 
+            !q.querySelector('.feedback') || 
+            q.querySelector('.feedback').style.display === 'none'
+        );
+        
+        if (unansweredQuestions.length > 0) {
+            showToast('Please answer all questions before finishing the quiz', 'warning');
+            return;
+        }
+        
+        showLoading();
+        
+        try {
+            const response = await fetch(`/quiz/attempt/{{ attempt.id }}/finish`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                clearInterval(timerInterval);
+                window.location.href = data.redirect_url;
+            }
+        } catch (error) {
+            showToast('Error finishing quiz. Please try again.', 'danger');
+        } finally {
+            hideLoading();
+        }
+    });
+</script>
+{% endblock %} 

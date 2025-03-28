@@ -1,0 +1,42 @@
+Segment Window (Short-term Memory) SGeeeeeeeeeeeeeseeees| eel + Long-term Memory (Short- and Long-term Memory) a at + Persistent Memory jaeen! eet Ty jeaeee! jae stasnesaisiis @ Short-term Memory istasaisat @ Long-term Memory PETES @ Persistent Memory
+Sliding Window (Short-term Memory) = + Long-term Memory (Short- and Long-term Memory) iS SEeSUEESUSEEESEESES + Persistent Memory BUGEEEEDEEEUEEEEEnenel /
+(a) Memory as a Context (MAC). We segment the sequence and use full causal attention in each window. Again, the first Np tokens are persistent memory and the next N; are long-term memory tokens
+@ Short-term Memory
+@ Long-term Memory
+@ Persistent Memory
+(b) Memory as Gating (MAG). We use sliding window attention (SWA) as a short-term memory and our neural memory module as a long-term memory, combining by a gating.
+Figure 3: Attention masks for different variants of Titans.
+4 Howto Incorporate Memory?
+designed neural memory into a deep learning architecture? As discussed earlier, from a memory perspective, the pair of K and V matrices in transformers can be interpreted as an associative memory block. Due to their accurate modeling of dependencies and so their limited context window, we interpret them as short-term memory modules, attending to the current context window size. On the other hand, our neural memory with the ability to continuously learn from data and store it in its weights can play the role of a a long-term memory. In this section, we aim to answer the above question by proposing three different variants of Titans. Later in our experiments, we show that each of these variants has its own advantages/disadvantages and also can show a trade-off between the efficiency and effectiveness in very long-contexts. G Sr important question that remained unanswered is: How one can effectively and efficiently incorporate the yay Yi
+4.1 Memory as a Context
+In the first architecture design (see Figure 2), we treat the memory as a context to the current information. That is, given a long sequence x € RN*4, we first chunk the sequence into fixed-size segments S$ for i = 1,...,N/C. Given the incoming segment S$“), we consider it as the current context and its past segment as the historical information. Therefore, let M;_1 be the state of long-term memory before segment S$“), we use the input context as the query to the memory M-1 to retrieve the corresponding information from the long-term memory. That is, we retrieve the past information that corresponds to S“) as:
+he = Mp1 (40), (21)
+where q; = S“ Wo. Next, we use this historical information along with our persistent memory parameters as the input sequence to the attention module:
+a(t) _ h (t) Su = [pie Pp] Il he IS“, (22)
+yp = Attn (5°) , (23)
+The structure of the attention map over the entire sequence is shown in Figure 3a. We then use y; to update the long-term memory module for the next segment and the final output:
+M;, = Mz-1 (yz) (24)
+or = yr ® M; (yz). (25)
+Note that, in the above, we are updating the weight of M;_, through forward pass.
+This architecture has two key advantages: (1) Attention by having both historical and current context, has the ability to decides whether given the current data, the long-term memory information is needed. (2) The attention module helps
+Segment Window (Short-term Memory) SGeeeeeeeeeeeeeseeees| eel + Long-term Memory (Short- and Long-term Memory) a at + Persistent Memory jaeen! eet Ty jeaeee! jae stasnesaisiis @ Short-term Memory istasaisat @ Long-term Memory PETES @ Persistent Memory
+Sliding Window (Short-term Memory) = + Long-term Memory (Short- and Long-term Memory) iS SEeSUEESUSEEESEESES + Persistent Memory BUGEEEEDEEEUEEEEEnenel /
+(a) Memory as a Context (MAC). We segment the sequence and use full causal attention in each window. Again, the first Np tokens are persistent memory and the next N; are long-term memory tokens
+@ Short-term Memory
+@ Long-term Memory
+@ Persistent Memory
+(b) Memory as Gating (MAG). We use sliding window attention (SWA) as a short-term memory and our neural memory module as a long-term memory, combining by a gating.
+Figure 3: Attention masks for different variants of Titans.
+4 Howto Incorporate Memory?
+designed neural memory into a deep learning architecture? As discussed earlier, from a memory perspective, the pair of K and V matrices in transformers can be interpreted as an associative memory block. Due to their accurate modeling of dependencies and so their limited context window, we interpret them as short-term memory modules, attending to the current context window size. On the other hand, our neural memory with the ability to continuously learn from data and store it in its weights can play the role of a a long-term memory. In this section, we aim to answer the above question by proposing three different variants of Titans. Later in our experiments, we show that each of these variants has its own advantages/disadvantages and also can show a trade-off between the efficiency and effectiveness in very long-contexts. G Sr important question that remained unanswered is: How one can effectively and efficiently incorporate the yay Yi
+4.1 Memory as a Context
+In the first architecture design (see Figure 2), we treat the memory as a context to the current information. That is, given a long sequence x € RN*4, we first chunk the sequence into fixed-size segments S$ for i = 1,...,N/C. Given the incoming segment S$“), we consider it as the current context and its past segment as the historical information. Therefore, let M;_1 be the state of long-term memory before segment S$“), we use the input context as the query to the memory M-1 to retrieve the corresponding information from the long-term memory. That is, we retrieve the past information that corresponds to S“) as:
+he = Mp1 (40), (21)
+where q; = S“ Wo. Next, we use this historical information along with our persistent memory parameters as the input sequence to the attention module:
+a(t) _ h (t) Su = [pie Pp] Il he IS“, (22)
+yp = Attn (5°) , (23)
+The structure of the attention map over the entire sequence is shown in Figure 3a. We then use y; to update the long-term memory module for the next segment and the final output:
+M;, = Mz-1 (yz) (24)
+or = yr ® M; (yz). (25)
+Note that, in the above, we are updating the weight of M;_, through forward pass.
+This architecture has two key advantages: (1) Attention by having both historical and current context, has the ability to decides whether given the current data, the long-term memory information is needed. (2) The attention module helps

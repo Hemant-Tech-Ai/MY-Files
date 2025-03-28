@@ -1,0 +1,14 @@
+Questions
+1) Evaluate whether the firm can convert itself into a Private limited Co.
+2) Advise the firm about different sources of finance available to them.
+3) Calculate the capital mix and cost of capital of the firm.
+4) Advise the firm about the Marketing Strategy to be adopted.
+5) Assess the working capital requirements of the firm.
+Possible Solutions
+1) The project is relative small. Conversion into a Private limited Co. results in avoidable expenditure. The firm will have to comply with several provisions of Indian Companies’ Act. At present there is no need to convert itself into a Private limited Co.
+2) Since this entity is a proprietary firm, it generally raises two types of funds — proprietor’s savings and loans from banks, non-banking financial corporations, friends, and relatives. However, a public limited company can raise funds through various sources, such as issue of equity and preference shares, issue of debentures, term loans from banks, and retained earnings. Amongst the Banks they should negotiate with banks and choose the bank which offers comparatively lowest cost.
+3) M/s Vithal Enterprises had bought a term loan of Rs. 5 lacs from a bank at a rate of 12.25%, which was to be repaid in five years. They have incurred the following expenses in connection with the loan:
+12.25% + _30,000/5_ X 100 = 12.25 +2.4= 14.65% (5,00,000/2)
+A company calculates the cost of equity, cost of preference cost of debenture and cost of term loans to compare them and to choose the most optimum mix of the capital. The mix of capital when the weighted average cost of capital is the lowest is the optimum mix.
+Cost of Equity = PAT/Equity = 1.08/6.9 =15.65%
+Weighted Average Cost of Capital = Proportion of equity x cost of equity + Proportion of debt x cost of debt = (6.8/12.16) X .1565 + (5.26/12.16) X .1465 = 15.08%

@@ -1,0 +1,164 @@
+{
+  "skills": [
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "Programming Languages",
+      "proficiency": 95,
+      "icon": "python-icon.svg",
+      "description": "Extensive experience with Python for web development, data analysis, and machine learning."
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "Programming Languages",
+      "proficiency": 90,
+      "icon": "javascript-icon.svg",
+      "description": "Strong proficiency in JavaScript for frontend and backend development."
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "category": "Programming Languages",
+      "proficiency": 85,
+      "icon": "typescript-icon.svg",
+      "description": "Experience with TypeScript for building type-safe applications."
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "category": "Programming Languages",
+      "proficiency": 80,
+      "icon": "go-icon.svg",
+      "description": "Used Go for building microservices and high-performance applications."
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "Frontend",
+      "proficiency": 92,
+      "icon": "react-icon.svg",
+      "description": "Extensive experience building complex user interfaces with React."
+    },
+    {
+      "id": "vue",
+      "name": "Vue.js",
+      "category": "Frontend",
+      "proficiency": 75,
+      "icon": "vue-icon.svg",
+      "description": "Experience building applications with Vue.js and Vuex."
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "category": "Frontend",
+      "proficiency": 70,
+      "icon": "angular-icon.svg",
+      "description": "Experience with Angular for enterprise applications."
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "category": "Backend",
+      "proficiency": 88,
+      "icon": "node-icon.svg",
+      "description": "Built scalable backend services with Node.js and Express."
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "category": "Backend",
+      "proficiency": 90,
+      "icon": "fastapi-icon.svg",
+      "description": "Developed high-performance APIs with FastAPI."
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "category": "Backend",
+      "proficiency": 85,
+      "icon": "django-icon.svg",
+      "description": "Built full-stack web applications with Django."
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "Databases",
+      "proficiency": 85,
+      "icon": "postgresql-icon.svg",
+      "description": "Experience with PostgreSQL for relational data storage."
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "Databases",
+      "proficiency": 80,
+      "icon": "mongodb-icon.svg",
+      "description": "Used MongoDB for document-based storage in various projects."
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "category": "Databases",
+      "proficiency": 75,
+      "icon": "redis-icon.svg",
+      "description": "Implemented caching and message queues with Redis."
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "DevOps",
+      "proficiency": 90,
+      "icon": "docker-icon.svg",
+      "description": "Containerized applications and services with Docker."
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "category": "DevOps",
+      "proficiency": 85,
+      "icon": "kubernetes-icon.svg",
+      "description": "Orchestrated containerized applications with Kubernetes."
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "category": "Cloud",
+      "proficiency": 88,
+      "icon": "aws-icon.svg",
+      "description": "Deployed and managed applications on AWS."
+    },
+    {
+      "id": "gcp",
+      "name": "Google Cloud",
+      "category": "Cloud",
+      "proficiency": 82,
+      "icon": "gcp-icon.svg",
+      "description": "Experience with Google Cloud Platform services."
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow",
+      "category": "Machine Learning",
+      "proficiency": 80,
+      "icon": "tensorflow-icon.svg",
+      "description": "Built and deployed machine learning models with TensorFlow."
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "category": "Machine Learning",
+      "proficiency": 75,
+      "icon": "pytorch-icon.svg",
+      "description": "Experience with PyTorch for deep learning research."
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "Tools",
+      "proficiency": 95,
+      "icon": "git-icon.svg",
+      "description": "Proficient with Git for version control and collaboration."
+    }
+  ]
+} 

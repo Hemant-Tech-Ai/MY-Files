@@ -1,0 +1,81 @@
+{
+  "education": [
+    {
+      "institution": "Stanford University",
+      "degree": "Master of Science",
+      "field": "Computer Science",
+      "start_date": "2018-09",
+      "end_date": "2020-06",
+      "description": "Specialized in Artificial Intelligence and Machine Learning. Thesis on 'Deep Learning Applications in Natural Language Processing'.",
+      "location": "Stanford, CA"
+    },
+    {
+      "institution": "University of California, Berkeley",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "start_date": "2014-09",
+      "end_date": "2018-05",
+      "description": "Graduated with honors. Minor in Mathematics.",
+      "location": "Berkeley, CA"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Google",
+      "position": "Senior Software Engineer",
+      "start_date": "2022-01",
+      "end_date": null,
+      "description": [
+        "Lead a team of 5 engineers developing cloud-based solutions",
+        "Implemented microservices architecture using Kubernetes and Docker",
+        "Reduced system latency by 40% through optimization of database queries",
+        "Developed CI/CD pipelines using GitHub Actions"
+      ],
+      "location": "Mountain View, CA",
+      "technologies": ["Python", "Go", "Kubernetes", "Docker", "PostgreSQL", "React"]
+    },
+    {
+      "company": "Microsoft",
+      "position": "Software Engineer",
+      "start_date": "2020-07",
+      "end_date": "2021-12",
+      "description": [
+        "Developed features for Microsoft Azure cloud platform",
+        "Implemented RESTful APIs using .NET Core",
+        "Collaborated with cross-functional teams to deliver high-quality software",
+        "Participated in code reviews and mentored junior developers"
+      ],
+      "location": "Redmond, WA",
+      "technologies": ["C#", ".NET Core", "Azure", "SQL Server", "TypeScript"]
+    },
+    {
+      "company": "Internship at Facebook",
+      "position": "Software Engineering Intern",
+      "start_date": "2019-05",
+      "end_date": "2019-08",
+      "description": [
+        "Developed features for the Facebook Messenger platform",
+        "Implemented real-time notification system using React and GraphQL",
+        "Collaborated with product managers and designers to refine feature requirements"
+      ],
+      "location": "Menlo Park, CA",
+      "technologies": ["JavaScript", "React", "GraphQL", "Node.js"]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "date": "2021-03",
+      "url": "https://www.aws.training/certification",
+      "description": "Professional level certification for designing distributed systems on AWS"
+    },
+    {
+      "name": "Google Cloud Professional Data Engineer",
+      "issuer": "Google Cloud",
+      "date": "2022-05",
+      "url": "https://cloud.google.com/certification/data-engineer",
+      "description": "Certification for designing and building data processing systems on Google Cloud"
+    }
+  ]
+} 

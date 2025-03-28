@@ -1,0 +1,29 @@
+{% extends "quiz/base_quiz.html" %}
+
+{% block breadcrumb %}
+<li class="breadcrumb-item active">Subjects</li>
+{% endblock %}
+
+{% block quiz_content %}
+<div class="row">
+    {% for subject in subjects %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">{{ subject.name }}</h5>
+                <p class="card-text">{{ subject.description }}</p>
+                <a href="{{ url_for('quiz.list_chapters', subject_id=subject.id) }}" class="btn btn-primary">
+                    View Chapters
+                </a>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="col-12">
+        <div class="alert alert-info">
+            No subjects available at the moment.
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %} 

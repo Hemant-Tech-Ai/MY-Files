@@ -1,0 +1,21 @@
+pymupdf
+# unstructured[all-docs]
+unstructured-inference
+paddlepaddle
+paddleocr
+tensorflow
+numpy
+
+
+pymupdf
+pillow
+#unstructured
+unstructured-inference
+onnx
+onnxruntime
+pathlib
+pydantic
+# protobuf
+
+
+#uv pip install -r .\requirements.txt

@@ -1,0 +1,32 @@
+ad rs —e— Mamba —— LMM (Ly = 3) 17.5) _«~ LMM (Lau=1) —*— LMM (Ly, =4) —— LMM (Ly, =2) a w iv 17.0 S ol Perplexity Bo nN w foe} Oo 16.0) *—— 126 15.5} ———— 12.4 2000 4000 8000 16000 32000 2000 4000 8000 16000 32000 2000 4000 8000 16000 Sequence Length Sequence Length Sequence Length (a) 170M Parameters (b) 360M Parameters (c) 760M Parameters
+Perplexity
+Figure 7: The effect of memory depth on the perplexity. Deeper long-term memory results in better scaling in longer sequences.
+Table 3: Performance on long-term forecasting. The best results are highlighted .
+augmenting Llama3.1-8B model with RAG performs worse than Titans with about x70 less parameters.
+5.5 The Effect of Deep Memory
+In this section, we evaluate the effect of deep memory in both wall-clock training time and model performance’. To this end, we focus on different variants of our neural memory module, where Ly, = 1, 2,3, 4. We also use Mamba as a baseline for the model performance. For a fair comparison, we use the same training process for all models and train them on a subset of the Pile dataset (L. Gao et al. 2020).
+We report the perplexity of our models and baselines as the function of the sequence length in Figure 7. Interestingly, with the increase of memory depth, L jy, the model can achieve better perplexity over all sequence length. Also, deeper memory modules are more robust to the sequence length when the model has less number of parameters. With the increase of the number of parameters, all models show better performance on longer sequences.
+We also evaluate the effect of memory depth (Lj4 = 1, 2,3, 4) on the training throughput. We report the training throughput (the number of tokens per second) as the function of sequence length in Figure 8. All models scale linearly with respect to the context length (i.e., constant trend in the number of tokens per second with respect to sequence length). Also, by increasing the memory depth, as expected, we can see a linear trend that a deeper memory results in a slower training. Therefore, it is not always efficient to use deeper memory modules, showing a trade-off between effectiveness and efficiency.
+“\ i i ' 40 —1 ~_ aaa com oes 3 os i 7 7 + . § 30) »———»—_»__,, = 05 oa =a ma 2 Sequence Length
+5.6 Time Series Forecasting
+Figure 8: The effect of memory depth on training throughput
+To show the effectiveness of our memory module in a broader tasks, we also evaluate its performance in time series forecasting tasks. To this end, we use Simba framework (Patro and Agneeswaran 2024) for time series forecasting, and
+Note that, in this experiment, we only focus on the neural memory module to evaluate the effect of memory depth in the memorization process. Combining neural memory with attention as we do in Titans variants, can additionally enhance the performance of the model over long sequences.
+15
+32000
+ad rs —e— Mamba —— LMM (Ly = 3) 17.5) _«~ LMM (Lau=1) —*— LMM (Ly, =4) —— LMM (Ly, =2) a w iv 17.0 S ol Perplexity Bo nN w foe} Oo 16.0) *—— 126 15.5} ———— 12.4 2000 4000 8000 16000 32000 2000 4000 8000 16000 32000 2000 4000 8000 16000 Sequence Length Sequence Length Sequence Length (a) 170M Parameters (b) 360M Parameters (c) 760M Parameters
+Perplexity
+Figure 7: The effect of memory depth on the perplexity. Deeper long-term memory results in better scaling in longer sequences.
+Table 3: Performance on long-term forecasting. The best results are highlighted .
+augmenting Llama3.1-8B model with RAG performs worse than Titans with about x70 less parameters.
+5.5 The Effect of Deep Memory
+In this section, we evaluate the effect of deep memory in both wall-clock training time and model performance’. To this end, we focus on different variants of our neural memory module, where Ly, = 1, 2,3, 4. We also use Mamba as a baseline for the model performance. For a fair comparison, we use the same training process for all models and train them on a subset of the Pile dataset (L. Gao et al. 2020).
+We report the perplexity of our models and baselines as the function of the sequence length in Figure 7. Interestingly, with the increase of memory depth, L jy, the model can achieve better perplexity over all sequence length. Also, deeper memory modules are more robust to the sequence length when the model has less number of parameters. With the increase of the number of parameters, all models show better performance on longer sequences.
+We also evaluate the effect of memory depth (Lj4 = 1, 2,3, 4) on the training throughput. We report the training throughput (the number of tokens per second) as the function of sequence length in Figure 8. All models scale linearly with respect to the context length (i.e., constant trend in the number of tokens per second with respect to sequence length). Also, by increasing the memory depth, as expected, we can see a linear trend that a deeper memory results in a slower training. Therefore, it is not always efficient to use deeper memory modules, showing a trade-off between effectiveness and efficiency.
+“\ i i ' 40 —1 ~_ aaa com oes 3 os i 7 7 + . § 30) »———»—_»__,, = 05 oa =a ma 2 Sequence Length
+5.6 Time Series Forecasting
+Figure 8: The effect of memory depth on training throughput
+To show the effectiveness of our memory module in a broader tasks, we also evaluate its performance in time series forecasting tasks. To this end, we use Simba framework (Patro and Agneeswaran 2024) for time series forecasting, and
+Note that, in this experiment, we only focus on the neural memory module to evaluate the effect of memory depth in the memorization process. Combining neural memory with attention as we do in Titans variants, can additionally enhance the performance of the model over long sequences.
+15
+32000

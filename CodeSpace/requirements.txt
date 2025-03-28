@@ -1,0 +1,10 @@
+pymupdf
+unstructured[all-docs]
+paddlepaddle
+paddleocr
+tensorflow==2.10.0
+numpy==1.23.5
+onnx
+onnxruntime
+
+#uv pip install -r .\requirements.txt

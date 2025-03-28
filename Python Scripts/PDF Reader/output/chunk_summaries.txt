@@ -1,0 +1,78 @@
+Chunk 1 Summary:
+----------------------------------------
+Here is a concise summary of the key points and important information in the provided text:
+
+**Introduction and Importance of Cybersecurity**
+
+* Cybersecurity is crucial in today's technology-driven world to protect systems, important files, data, and other virtual things from cyber threats.
+* Every company, including IT firms, must be protected equally due to the development of new technology in cyber security.
+* Cybersecurity is essential because military, government, financial, medical, and corporate organizations accumulate, practice, and store vast amounts of data on PCs and other devices.
+
+**Types of Cyber Security**
+
+* Phishing: a type of cyber attack where fake communications are distributed to obtain sensitive information.
+* Ransomware: a type of malicious software that extracts currency by blocking access to records or the PC system until the ransom is paid.
+* Malware: a type of software intended to gain unauthorized access or cause impairment to a system.
+* Social engineering: a tactic used by opponents to trick individuals into revealing sensitive information.
+
+**Goals of Cyber Security**
+
+* The definitive objective of cybersecurity is to defend data from actual or cooperative cyber threats.
+* The three main goals of cybersecurity are:
+  1. Defending the privacy of information
+  2. Conserving the integrity of information
+  3. Controlling the obtainability of information on a need-to-know basis
+
+**Confidentiality, Integrity, and Availability (CIA) Triad**
+
+* The CIA triad is a safety model that guides strategies for data security.
+* The three components of the CIA triad are:
+  1. Confidentiality: ensuring that sensitive information is accessible only to authorized users.
+  2. Integrity: ensuring that data is accurate, reliable, and not altered.
+  3. Availability: ensuring that data and systems are accessible and usable when needed.
+
+**Advantages of Cybersecurity**
+
+* Offers security to the network or system
+* Protects society by safeguarding an organization's network from external attacks
+* Protects complex data, such as student data, patient data, and transaction data, from unauthorized access.
+* Helps defend the system against being retrieved by someone who is not authorized to access it.
+
+Chunk 2 Summary:
+----------------------------------------
+Here is a concise summary of the key points and important information in the text:
+
+**Cybersecurity Overview**
+
+* Cybersecurity is crucial in protecting against theft of information, defending workstations, and reducing PC freezing.
+* It delivers privacy for operators, proposes strict directives, and is problematic for non-technical people.
+* Cybersecurity deals with protections against hatefu attacks on a system, deletes or keeps hatefu fundamentals in a pre-existing network, and stops network access.
+
+**Cybersecurity Benefits**
+
+* Offers enhanced Internet security, advances cyber flexibility, speeds up system data, and information defense for industries.
+* Guards individual private data, protects networks and capitals, and challenges computer hackers and theft of personality.
+* Guards against data robbery since malicious operators cannot disrupt the network construction by applying a high-security procedure.
+
+**Disadvantages of Cybersecurity**
+
+* Firewalls can be challenging to configure correctly.
+* Defective configured firewalls might prohibit operators from executing any performance on the Internet earlier the Firewall is correctly connected.
+* Cybersecurity can be costly for normal users.
+
+**Emerging Threats**
+
+* Phishing attacks often coincide with major events, such as a surge in new cases or the announcement of a new drug or vaccine.
+* Ransomware attacks are increasing, with a commercial website falling victim to a ransomware attack every 11 seconds in 2021.
+* Cloud breaches are common, with the number expected to increase as more companies adopt cloud services to support remote workers.
+
+**Future of Cybersecurity**
+
+* The concept of cybersecurity is evolving, and it may become the "master problem" of the internet era.
+* Cybersecurity will require major variations in how humanoids and digital machines interact with each other.
+* The internet is a complex, engineered environment that human beings have formed, but it is static (for now) and composed of numeric machines that are constructed and programmed by societies.
+
+**References**
+
+* The text references several sources, including academic papers, articles, and websites, to support the discussion on cybersecurity.
+

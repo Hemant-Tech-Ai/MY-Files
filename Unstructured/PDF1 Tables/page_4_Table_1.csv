@@ -1,0 +1,9 @@
+SN,Particulars,31-3-07,31-3-08,,31-3-09
+1,Current Assets,1.93,,2.48,2.85
+2,Other Current Liabilities.,0.12,,0.13,0.14
+3,Working Capital Gap (3=1-2),1.81,,2.35,2.71
+4,Net Working Capital,0.31,,0.85,1.21
+5,25% of WCG,0.45,,0.59,0.68
+6,MPBF.1 (6=3-4),1.50,,1.50,1.50
+7,MPBF.2 (7=3-5),1.36,,1.76,2.03
+8,MPBF lower of 6 and 7,1.36,,1.50,1.50

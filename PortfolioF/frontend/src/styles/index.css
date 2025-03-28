@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme variables - Using the provided color palette */
+:root {
+  --background: #ffffff;
+  --background-secondary: #E2E8F0;
+  --background-tertiary: #CBD5E1;
+  --text-primary: #1E293B;
+  --text-secondary: #475569;
+  --text-tertiary: #64748B;
+  --accent: #10B981;
+  --accent-hover: #059669;
+  --border: #CBD5E1;
+  --shadow: rgba(0, 0, 0, 0.05);
+}
+
+/* Dark theme variables */
+html.dark {
+  --background: #1E293B;
+  --background-secondary: #334155;
+  --background-tertiary: #475569;
+  --text-primary: #F8FAFC;
+  --text-secondary: #E2E8F0;
+  --text-tertiary: #CBD5E1;
+  --accent: #10B981;
+  --accent-hover: #059669;
+  --border: #475569;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Apply transitions to all elements for smooth theme switching */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--background-tertiary);
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.sun-icon {
+  color: #EAB308;
+}
+
+.moon-icon {
+  color: #6366F1;
+}
+
+/* Add dark mode styles for common elements */
+@layer base {
+  body {
+    @apply bg-white dark:bg-slate-800;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-slate-900 dark:text-white;
+  }
+  
+  p {
+    @apply text-slate-700 dark:text-slate-300;
+  }
+  
+  a {
+    @apply text-emerald-600 dark:text-emerald-400 hover:text-emerald-800 dark:hover:text-emerald-300;
+  }
+}
+
+/* Add dark mode styles for components */
+@layer components {
+  .card {
+    @apply bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6 border border-slate-200 dark:border-slate-700;
+  }
+  
+  .button {
+    @apply bg-emerald-600 dark:bg-emerald-500 text-white px-4 py-2 rounded-md 
+           hover:bg-emerald-700 dark:hover:bg-emerald-600 
+           focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 
+           dark:focus:ring-offset-slate-900;
+  }
+  
+  .input {
+    @apply bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 
+           rounded-md px-4 py-2 focus:outline-none focus:ring-2 
+           focus:ring-emerald-500 dark:focus:ring-emerald-400 
+           text-slate-900 dark:text-white;
+  }
+
+  /* Theme toggle specific styles */
+  .theme-toggle-wrapper {
+    @apply fixed top-4 right-4 z-50 flex flex-col items-center;
+  }
+  
+  .theme-toggle {
+    @apply relative inline-flex items-center p-1 rounded-full w-14 h-7 
+           focus:outline-none focus:ring-2 focus:ring-offset-2 
+           focus:ring-offset-slate-100 dark:focus:ring-offset-slate-900 
+           focus:ring-emerald-500;
+  }
+  
+  .theme-toggle-thumb {
+    @apply absolute bg-white rounded-full transition-transform duration-300 
+           flex items-center justify-center;
+  }
+  
+  .theme-toggle-label {
+    @apply mt-1 text-xs font-medium text-center text-slate-700 dark:text-slate-300;
+  }
+} 

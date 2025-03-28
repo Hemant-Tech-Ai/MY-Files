@@ -1,0 +1,309 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+/* CSS Variables - Light theme by default */
+:root {
+  /* Colors - Light theme by default */
+  --color-bg-primary: var(--background, #ffffff);
+  --color-bg-secondary: var(--background-secondary, #f8fafc);
+  --color-bg-tertiary: var(--background-tertiary, #f1f5f9);
+  --color-text-primary: var(--text-primary, #0f172a);
+  --color-text-secondary: var(--text-secondary, #334155);
+  --color-text-tertiary: var(--text-tertiary, #64748b);
+  --color-accent-primary: var(--accent, #3b82f6);
+  --color-accent-secondary: #f97316;
+  --color-accent-tertiary: #0ea5e9;
+  
+  /* Typography */
+  --font-family-primary: 'Poppins', sans-serif;
+  --font-family-code: 'Roboto Mono', monospace;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3rem;
+  
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  
+  /* Border Radius */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-xl: 1rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Z-index */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal: 1040;
+  --z-index-popover: 1050;
+  --z-index-tooltip: 1060;
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent-primary);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent-tertiary);
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-family-primary);
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+/* Section */
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+.section-title {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-xl);
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-accent-primary);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--border-radius-md);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-normal);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-accent-primary);
+  color: var(--color-bg-primary);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px var(--color-accent-primary);
+  color: var(--color-accent-primary);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px var(--color-accent-primary);
+  color: var(--color-accent-primary);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Loading Screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-index-modal);
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(100, 255, 218, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--color-accent-primary);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-3, .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  :root {
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+  }
+  
+  .container {
+    padding: 0 var(--space-md);
+  }
+}
+
+/* Hide any theme-related elements that don't have our specific class */
+div:not(.official-theme-toggle) > div:has(> select),
+div:not(.official-theme-toggle) > select,
+div:not(.official-theme-toggle) > div > select {
+  display: none !important;
+}
+
+/* Target the specific element in the top left corner */
+body > div:first-child:not(.official-theme-toggle) {
+  display: none !important;
+}
+
+/* Hide any select elements in the document */
+select {
+  display: none !important;
+}
+
+/* Hide any non-functional theme toggle elements */
+.theme-toggle-wrapper:not(:first-of-type) {
+  display: none !important;
+}
+
+/* Hide any select elements in the top left corner */
+select[id^="light"],
+select[class^="light"],
+select[name^="light"],
+select[id^="theme"],
+select[class^="theme"],
+select[name^="theme"],
+select[id^="mode"],
+select[class^="mode"],
+select[name^="mode"] {
+  display: none !important;
+}
+
+/* Hide any elements with fixed position in the top left corner */
+div[style*="position: fixed"][style*="top: 0"][style*="left: 0"],
+div[style*="position:fixed"][style*="top:0"][style*="left:0"],
+div[style*="position: absolute"][style*="top: 0"][style*="left: 0"],
+div[style*="position:absolute"][style*="top:0"][style*="left:0"] {
+  display: none !important;
+}
+
+/* Hide any elements with "Light Mode" or "Dark Mode" text */
+div:has(> span:contains("Light Mode")),
+div:has(> span:contains("Dark Mode")),
+div:has(> div:contains("Light Mode")),
+div:has(> div:contains("Dark Mode")) {
+  display: none !important;
+} 

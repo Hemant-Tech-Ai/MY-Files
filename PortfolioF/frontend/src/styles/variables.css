@@ -1,0 +1,90 @@
+/* Light theme variables */
+:root {
+  /* Primary Colors - Light Theme */
+  --color-bg-primary: var(--background, #ffffff);
+  --color-bg-secondary: var(--background-secondary, #E2E8F0);
+  --color-bg-tertiary: var(--background-tertiary, #CBD5E1);
+  
+  /* Text Colors */
+  --color-text-primary: var(--text-primary, #1E293B);
+  --color-text-secondary: var(--text-secondary, #475569);
+  --color-text-tertiary: var(--text-tertiary, #64748B);
+  
+  /* Accent Colors */
+  --color-accent-primary: var(--accent, #10B981);
+  --color-accent-primary-rgb: 16, 185, 129; /* RGB values for rgba() functions */
+  --color-accent-secondary: #059669;
+  --color-accent-tertiary: #047857;
+  
+  /* Neutral Colors */
+  --color-neutral-100: #F8FAFC;
+  --color-neutral-200: #E2E8F0;
+  --color-neutral-300: #CBD5E1;
+  --color-neutral-400: #94A3B8;
+  --color-neutral-500: #64748B;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1E293B;
+  --color-neutral-900: #0F172A;
+  
+  /* Spacing */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+  --space-xxxl: 5rem;
+  --space-2xl: 2.5rem;
+  --space-3xl: 4rem;
+  
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-xxl: 1.5rem;
+  --font-size-xxxl: 2rem;
+  --font-size-xxxxl: 3rem;
+  --font-size-2xl: 1.75rem;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Font Families */
+  --font-family-primary: 'Poppins', sans-serif;
+  --font-family-secondary: 'Roboto', sans-serif;
+  --font-family-code: 'Fira Code', monospace;
+  
+  /* Border Radius */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  --border-radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Z-index */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+} 

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Reports Dashboard - Quiz Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        .card {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            border-radius: 10px 10px 0 0 !important;
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        .stats-card {
+            text-align: center;
+            padding: 15px;
+        }
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #0d6efd;
+        }
+        .stats-label {
+            color: #6c757d;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        .btn-primary {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+        .top-users-table th {
+            background-color: #f8f9fa;
+        }
+        .spinner-border {
+            margin-right: 8px;
+            width: 1rem;
+            height: 1rem;
+        }
+        .alert {
+            display: none;
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Reports Management</h1>
+        
+        <!-- Statistics Cards -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="stats-number" id="user-count">0</div>
+                    <div class="stats-label">Users</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="stats-number" id="quiz-count">0</div>
+                    <div class="stats-label">Quizzes</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="stats-number" id="scores-last-month">0</div>
+                    <div class="stats-label">Scores Last Month</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="stats-number" id="sent-reports">0</div>
+                    <div class="stats-label">Reports Sent</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Monthly Report Generator -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-file-alt me-2"></i>Generate Monthly Reports
+                    </div>
+                    <div class="card-body">
+                        <form id="report-form">
+                            <div class="mb-3">
+                                <label for="month-select" class="form-label">Month</label>
+                                <select class="form-select" id="month-select" required>
+                                    <option value="">Select a month</option>
+                                    <!-- Will be populated dynamically -->
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="user-select" class="form-label">User (Optional)</label>
+                                <select class="form-select" id="user-select">
+                                    <option value="">All Users</option>
+                                    <!-- Will be populated dynamically -->
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="generate-btn">
+                                <span class="spinner-border hidden" id="generate-spinner"></span>
+                                Generate Report
+                            </button>
+                        </form>
+                        <div class="alert alert-success mt-3" id="success-alert"></div>
+                        <div class="alert alert-danger mt-3" id="error-alert"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Top Performing Users -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-trophy me-2"></i>Top Performing Users
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped top-users-table">
+                                <thead>
+                                    <tr>
+                                        <th>User</th>
+                                        <th>Quizzes Taken</th>
+                                        <th>Avg. Score</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="top-users-body">
+                                    <!-- Will be populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Global variables
+        let reportsSent = 0;
+        const token = localStorage.getItem('token');
+
+        // Load initial data
+        document.addEventListener('DOMContentLoaded', () => {
+            loadReportOptions();
+            loadReportStats();
+        });
+
+        // Load report options (months and users)
+        function loadReportOptions() {
+            fetch('/admin/reports/monthly', {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Populate month dropdown
+                const monthSelect = document.getElementById('month-select');
+                monthSelect.innerHTML = '<option value="">Select a month</option>';
+                
+                if (data.months && data.months.length > 0) {
+                    data.months.forEach(month => {
+                        const option = document.createElement('option');
+                        option.value = JSON.stringify({ month: month.month, year: month.year });
+                        option.textContent = month.label;
+                        monthSelect.appendChild(option);
+                    });
+                }
+                
+                // Populate user dropdown
+                const userSelect = document.getElementById('user-select');
+                userSelect.innerHTML = '<option value="">All Users</option>';
+                
+                if (data.users && data.users.length > 0) {
+                    data.users.forEach(user => {
+                        const option = document.createElement('option');
+                        option.value = user.id;
+                        option.textContent = `${user.name} (${user.email})`;
+                        userSelect.appendChild(option);
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error loading report options:', error);
+                showError('Failed to load report options. Please try again later.');
+            });
+        }
+
+        // Load report statistics
+        function loadReportStats() {
+            fetch('/admin/reports/stats', {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Update stats cards
+                document.getElementById('user-count').textContent = data.user_count || 0;
+                document.getElementById('quiz-count').textContent = data.quiz_count || 0;
+                document.getElementById('scores-last-month').textContent = data.scores_last_month || 0;
+                document.getElementById('sent-reports').textContent = reportsSent;
+                
+                // Populate top users table
+                const tableBody = document.getElementById('top-users-body');
+                tableBody.innerHTML = '';
+                
+                if (data.top_users && data.top_users.length > 0) {
+                    data.top_users.forEach(user => {
+                        const row = document.createElement('tr');
+                        
+                        // User name and email
+                        const nameCell = document.createElement('td');
+                        nameCell.innerHTML = `<strong>${user.name}</strong><br><small>${user.email}</small>`;
+                        row.appendChild(nameCell);
+                        
+                        // Quizzes taken
+                        const quizzesCell = document.createElement('td');
+                        quizzesCell.textContent = user.quizzes_taken;
+                        row.appendChild(quizzesCell);
+                        
+                        // Average score
+                        const scoreCell = document.createElement('td');
+                        scoreCell.textContent = `${user.average_score}%`;
+                        row.appendChild(scoreCell);
+                        
+                        // Action button
+                        const actionCell = document.createElement('td');
+                        const button = document.createElement('button');
+                        button.className = 'btn btn-sm btn-outline-primary';
+                        button.innerHTML = 'Send Report';
+                        button.onclick = () => generateReportForUser(user.id);
+                        actionCell.appendChild(button);
+                        row.appendChild(actionCell);
+                        
+                        tableBody.appendChild(row);
+                    });
+                } else {
+                    const row = document.createElement('tr');
+                    const cell = document.createElement('td');
+                    cell.colSpan = 4;
+                    cell.textContent = 'No user data available';
+                    cell.className = 'text-center';
+                    row.appendChild(cell);
+                    tableBody.appendChild(row);
+                }
+            })
+            .catch(error => {
+                console.error('Error loading report stats:', error);
+            });
+        }
+
+        // Form submission for report generation
+        document.getElementById('report-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading spinner
+            const spinner = document.getElementById('generate-spinner');
+            spinner.classList.remove('hidden');
+            
+            // Get form values
+            const monthData = JSON.parse(document.getElementById('month-select').value);
+            const userId = document.getElementById('user-select').value || null;
+            
+            // Prepare request data
+            const requestData = {
+                month: monthData.month,
+                year: monthData.year
+            };
+            
+            if (userId) {
+                requestData.user_id = userId;
+            }
+            
+            // Send request to generate report
+            fetch('/admin/reports/monthly/trigger', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify(requestData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hide loading spinner
+                spinner.classList.add('hidden');
+                
+                if (data.error) {
+                    showError(data.error);
+                } else {
+                    showSuccess(data.message || 'Report(s) generated successfully!');
+                    reportsSent++;
+                    document.getElementById('sent-reports').textContent = reportsSent;
+                }
+            })
+            .catch(error => {
+                // Hide loading spinner
+                spinner.classList.add('hidden');
+                console.error('Error generating report:', error);
+                showError('Failed to generate report. Please try again later.');
+            });
+        });
+
+        // Generate report for a specific user
+        function generateReportForUser(userId) {
+            // Get currently selected month
+            const monthSelect = document.getElementById('month-select');
+            if (!monthSelect.value) {
+                showError('Please select a month first');
+                return;
+            }
+            
+            const monthData = JSON.parse(monthSelect.value);
+            
+            // Prepare request data
+            const requestData = {
+                month: monthData.month,
+                year: monthData.year,
+                user_id: userId
+            };
+            
+            // Send request to generate report
+            fetch('/admin/reports/monthly/trigger', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify(requestData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    showError(data.error);
+                } else {
+                    showSuccess(data.message || 'Report generated successfully!');
+                    reportsSent++;
+                    document.getElementById('sent-reports').textContent = reportsSent;
+                }
+            })
+            .catch(error => {
+                console.error('Error generating report for user:', error);
+                showError('Failed to generate report. Please try again later.');
+            });
+        }
+
+        // Show success message
+        function showSuccess(message) {
+            const alert = document.getElementById('success-alert');
+            alert.textContent = message;
+            alert.style.display = 'block';
+            
+            // Hide error alert if visible
+            document.getElementById('error-alert').style.display = 'none';
+            
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 5000);
+        }
+
+        // Show error message
+        function showError(message) {
+            const alert = document.getElementById('error-alert');
+            alert.textContent = message;
+            alert.style.display = 'block';
+            
+            // Hide success alert if visible
+            document.getElementById('success-alert').style.display = 'none';
+            
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html> 

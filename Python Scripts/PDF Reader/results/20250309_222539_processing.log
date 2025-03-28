@@ -1,0 +1,130 @@
+2025-03-09 22:25:39,604 [INFO] Starting PDF processing pipeline
+2025-03-09 22:25:39,605 [INFO] Processing PDF: input/4.pdf
+2025-03-09 22:25:39,605 [INFO] Starting PDF text extraction from: input/4.pdf
+2025-03-09 22:25:39,642 [INFO] PDF has 7 pages
+2025-03-09 22:25:39,642 [INFO] Processing page 1/7
+2025-03-09 22:25:39,711 [INFO] Processing page 2/7
+2025-03-09 22:25:39,746 [INFO] Processing page 3/7
+2025-03-09 22:25:39,777 [INFO] Processing page 4/7
+2025-03-09 22:25:39,805 [INFO] Processing page 5/7
+2025-03-09 22:25:39,834 [INFO] Processing page 6/7
+2025-03-09 22:25:39,867 [INFO] Processing page 7/7
+2025-03-09 22:25:39,900 [INFO] Saved output to: results/20250309_222539_extracted_text.txt
+2025-03-09 22:25:39,901 [INFO] Saved extracted text (23966 characters)
+2025-03-09 22:25:39,901 [INFO] Starting structured analysis with llama-3.1-8b-instant
+2025-03-09 22:25:39,902 [INFO] Split text into 12 chunks
+2025-03-09 22:25:39,902 [INFO] Processing chunk 1/12 with llama-3.1-8b-instant
+2025-03-09 22:25:41,003 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:25:41,602 [INFO] Completed chunk 1 analysis
+2025-03-09 22:25:41,602 [INFO] Processing chunk 2/12 with llama-3.1-8b-instant
+2025-03-09 22:25:41,698 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:25:42,143 [INFO] Completed chunk 2 analysis
+2025-03-09 22:25:42,143 [INFO] Processing chunk 3/12 with llama-3.1-8b-instant
+2025-03-09 22:25:42,259 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:25:42,758 [INFO] Completed chunk 3 analysis
+2025-03-09 22:25:42,759 [INFO] Processing chunk 4/12 with llama-3.1-8b-instant
+2025-03-09 22:25:42,865 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:25:43,466 [INFO] Completed chunk 4 analysis
+2025-03-09 22:25:43,466 [INFO] Processing chunk 5/12 with llama-3.1-8b-instant
+2025-03-09 22:25:43,572 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:25:44,045 [INFO] Completed chunk 5 analysis
+2025-03-09 22:25:44,046 [INFO] Processing chunk 6/12 with llama-3.1-8b-instant
+2025-03-09 22:25:44,095 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-09 22:25:44,096 [INFO] Retrying request to /openai/v1/chat/completions in 8.000000 seconds
+2025-03-09 22:25:52,289 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:25:52,767 [INFO] Completed chunk 6 analysis
+2025-03-09 22:25:52,767 [INFO] Processing chunk 7/12 with llama-3.1-8b-instant
+2025-03-09 22:25:52,827 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-09 22:25:52,827 [INFO] Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2025-03-09 22:26:03,961 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:26:04,419 [INFO] Completed chunk 7 analysis
+2025-03-09 22:26:04,419 [INFO] Processing chunk 8/12 with llama-3.1-8b-instant
+2025-03-09 22:26:04,466 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-09 22:26:04,467 [INFO] Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2025-03-09 22:26:15,668 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:26:16,150 [INFO] Completed chunk 8 analysis
+2025-03-09 22:26:16,151 [INFO] Processing chunk 9/12 with llama-3.1-8b-instant
+2025-03-09 22:26:16,198 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-09 22:26:16,199 [INFO] Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2025-03-09 22:26:27,366 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:26:27,785 [INFO] Completed chunk 9 analysis
+2025-03-09 22:26:27,786 [INFO] Processing chunk 10/12 with llama-3.1-8b-instant
+2025-03-09 22:26:27,889 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-09 22:26:27,890 [INFO] Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2025-03-09 22:26:39,031 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:26:39,507 [INFO] Completed chunk 10 analysis
+2025-03-09 22:26:39,508 [INFO] Processing chunk 11/12 with llama-3.1-8b-instant
+2025-03-09 22:26:39,570 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-09 22:26:39,570 [INFO] Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2025-03-09 22:26:50,733 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:26:51,134 [INFO] Completed chunk 11 analysis
+2025-03-09 22:26:51,135 [INFO] Processing chunk 12/12 with llama-3.1-8b-instant
+2025-03-09 22:26:51,202 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-09 22:26:51,202 [INFO] Retrying request to /openai/v1/chat/completions in 9.000000 seconds
+2025-03-09 22:27:00,344 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:01,330 [INFO] Completed chunk 12 analysis
+2025-03-09 22:27:01,335 [INFO] Saved output to: results/20250309_222701_structured_analysis.md
+2025-03-09 22:27:01,336 [INFO] Completed structured analysis
+2025-03-09 22:27:01,336 [INFO] Starting final summary with gemma2-9b-it
+2025-03-09 22:27:01,336 [INFO] Split text into 12 chunks
+2025-03-09 22:27:01,336 [INFO] Processing chunk 1/12 with gemma2-9b-it
+2025-03-09 22:27:01,665 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:02,370 [INFO] Completed chunk 1 summary with length: 1629
+2025-03-09 22:27:02,370 [INFO] Processing chunk 2/12 with gemma2-9b-it
+2025-03-09 22:27:02,659 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:03,532 [INFO] Completed chunk 2 summary with length: 2537
+2025-03-09 22:27:03,532 [INFO] Processing chunk 3/12 with gemma2-9b-it
+2025-03-09 22:27:03,821 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:04,530 [INFO] Completed chunk 3 summary with length: 2207
+2025-03-09 22:27:04,530 [INFO] Processing chunk 4/12 with gemma2-9b-it
+2025-03-09 22:27:04,815 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:05,514 [INFO] Completed chunk 4 summary with length: 1920
+2025-03-09 22:27:05,514 [INFO] Processing chunk 5/12 with gemma2-9b-it
+2025-03-09 22:27:05,813 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:06,757 [INFO] Completed chunk 5 summary with length: 2937
+2025-03-09 22:27:06,758 [INFO] Processing chunk 6/12 with gemma2-9b-it
+2025-03-09 22:27:07,111 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:07,871 [INFO] Completed chunk 6 summary with length: 2309
+2025-03-09 22:27:07,871 [INFO] Processing chunk 7/12 with gemma2-9b-it
+2025-03-09 22:27:08,176 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:08,919 [INFO] Completed chunk 7 summary with length: 2475
+2025-03-09 22:27:08,920 [INFO] Processing chunk 8/12 with gemma2-9b-it
+2025-03-09 22:27:09,249 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:09,957 [INFO] Completed chunk 8 summary with length: 1956
+2025-03-09 22:27:09,957 [INFO] Processing chunk 9/12 with gemma2-9b-it
+2025-03-09 22:27:10,249 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:10,723 [INFO] Completed chunk 9 summary with length: 1391
+2025-03-09 22:27:10,723 [INFO] Processing chunk 10/12 with gemma2-9b-it
+2025-03-09 22:27:11,024 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:11,497 [INFO] Completed chunk 10 summary with length: 1452
+2025-03-09 22:27:11,497 [INFO] Processing chunk 11/12 with gemma2-9b-it
+2025-03-09 22:27:11,784 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:12,351 [INFO] Completed chunk 11 summary with length: 1376
+2025-03-09 22:27:12,351 [INFO] Processing chunk 12/12 with gemma2-9b-it
+2025-03-09 22:27:12,674 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:12,908 [INFO] Completed chunk 12 summary with length: 285
+2025-03-09 22:27:12,908 [INFO] Processing 12 summaries in batches
+2025-03-09 22:27:12,908 [INFO] Processing summary batch 1/4
+2025-03-09 22:27:13,201 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:14,540 [INFO] Completed batch 1 summary with length: 3935
+2025-03-09 22:27:14,541 [INFO] Processing summary batch 2/4
+2025-03-09 22:27:14,838 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:16,107 [INFO] Completed batch 2 summary with length: 3532
+2025-03-09 22:27:16,107 [INFO] Processing summary batch 3/4
+2025-03-09 22:27:16,168 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-09 22:27:16,168 [INFO] Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2025-03-09 22:27:17,514 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:18,062 [INFO] Completed batch 3 summary with length: 1487
+2025-03-09 22:27:18,063 [INFO] Processing summary batch 4/4
+2025-03-09 22:27:18,108 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-09 22:27:18,108 [INFO] Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2025-03-09 22:27:21,485 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:22,002 [INFO] Completed batch 4 summary with length: 1568
+2025-03-09 22:27:22,002 [INFO] Creating final summary from intermediate summaries
+2025-03-09 22:27:22,077 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-03-09 22:27:22,077 [INFO] Retrying request to /openai/v1/chat/completions in 10.000000 seconds
+2025-03-09 22:27:32,425 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 22:27:34,039 [INFO] Generated final summary with length: 4843
+2025-03-09 22:27:34,050 [INFO] Saved output to: results/20250309_222734_final_summary.md
+2025-03-09 22:27:34,050 [INFO] Completed final summary
+2025-03-09 22:27:34,051 [INFO] Processing pipeline completed successfully

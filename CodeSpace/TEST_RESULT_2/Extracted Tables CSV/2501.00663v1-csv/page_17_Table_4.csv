@@ -1,0 +1,11 @@
+Model,Language Modeling,Reasoning,Long Context.
+Model,ppl ,acc ,acc 
+LMM,27.01,47.83,92.68
++Attn (MAC),26.67,48.65,97.95
++Attn (MAG),25.70,48.60,96.70
++Attn (MAL),25.91,47.87,96.91
+Linear Memory.,28.49,46.97,85.34
+w/o Convolution,28.73,45.82,90.28
+w/o Momentum,28.98,45.49,87.12
+w/o Weight Decay,29.04,45.11,85.60
+w/o Persistent Memory,27.63,46.35,92.49

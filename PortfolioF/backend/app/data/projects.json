@@ -1,0 +1,142 @@
+{
+  "projects": [
+    {
+      "id": "portfolio-website",
+      "title": "Portfolio Website",
+      "description": "A modern portfolio website built with React and FastAPI",
+      "long_description": "This portfolio website showcases my skills, projects, and experience. It features a modern UI with a cold color scheme, interactive components, and a chatbot assistant. The frontend is built with React and the backend with FastAPI.",
+      "technologies": ["React", "FastAPI", "Python", "JavaScript", "CSS", "Docker"],
+      "github_url": "https://github.com/username/portfolio-website",
+      "live_url": "https://portfolio.example.com",
+      "images": [
+        {
+          "url": "/assets/images/portfolio-1.jpg",
+          "alt": "Portfolio website homepage",
+          "is_primary": true
+        },
+        {
+          "url": "/assets/images/portfolio-2.jpg",
+          "alt": "Portfolio website projects section",
+          "is_primary": false
+        }
+      ],
+      "featured": true,
+      "date": "2023-06"
+    },
+    {
+      "id": "e-commerce-platform",
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce platform with payment integration",
+      "long_description": "This e-commerce platform allows users to browse products, add them to cart, and complete purchases with integrated payment processing. It includes user authentication, product management, order tracking, and an admin dashboard.",
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe", "Redux"],
+      "github_url": "https://github.com/username/e-commerce-platform",
+      "live_url": "https://ecommerce.example.com",
+      "images": [
+        {
+          "url": "/assets/images/ecommerce-1.jpg",
+          "alt": "E-commerce platform homepage",
+          "is_primary": true
+        },
+        {
+          "url": "/assets/images/ecommerce-2.jpg",
+          "alt": "E-commerce platform product page",
+          "is_primary": false
+        }
+      ],
+      "featured": true,
+      "date": "2022-11"
+    },
+    {
+      "id": "ai-image-generator",
+      "title": "AI Image Generator",
+      "description": "A web application that generates images using AI",
+      "long_description": "This application uses OpenAI's DALL-E API to generate images based on text prompts. Users can create, save, and share their generated images. The application includes user authentication, image history, and social sharing features.",
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "OpenAI API", "AWS S3"],
+      "github_url": "https://github.com/username/ai-image-generator",
+      "live_url": "https://ai-image.example.com",
+      "images": [
+        {
+          "url": "/assets/images/ai-image-1.jpg",
+          "alt": "AI Image Generator interface",
+          "is_primary": true
+        },
+        {
+          "url": "/assets/images/ai-image-2.jpg",
+          "alt": "Generated image example",
+          "is_primary": false
+        }
+      ],
+      "featured": true,
+      "date": "2023-02"
+    },
+    {
+      "id": "task-management-app",
+      "title": "Task Management Application",
+      "description": "A Kanban-style task management application",
+      "long_description": "This task management application allows users to create boards, lists, and cards to organize their tasks. It includes features like drag-and-drop, due dates, labels, and team collaboration. The application is built with a modern tech stack and follows best practices for UI/UX design.",
+      "technologies": ["React", "TypeScript", "Node.js", "PostgreSQL", "Socket.io", "Docker"],
+      "github_url": "https://github.com/username/task-management-app",
+      "live_url": "https://tasks.example.com",
+      "images": [
+        {
+          "url": "/assets/images/task-app-1.jpg",
+          "alt": "Task Management App board view",
+          "is_primary": true
+        },
+        {
+          "url": "/assets/images/task-app-2.jpg",
+          "alt": "Task Management App card detail",
+          "is_primary": false
+        }
+      ],
+      "featured": false,
+      "date": "2022-08"
+    },
+    {
+      "id": "weather-dashboard",
+      "title": "Weather Dashboard",
+      "description": "A weather dashboard with location-based forecasts",
+      "long_description": "This weather dashboard provides current weather conditions and forecasts for any location. It uses geolocation to automatically detect the user's location and displays weather data in an intuitive interface. Users can save favorite locations and view historical weather data.",
+      "technologies": ["JavaScript", "HTML", "CSS", "OpenWeatherMap API", "Chart.js"],
+      "github_url": "https://github.com/username/weather-dashboard",
+      "live_url": "https://weather.example.com",
+      "images": [
+        {
+          "url": "/assets/images/weather-1.jpg",
+          "alt": "Weather Dashboard main view",
+          "is_primary": true
+        },
+        {
+          "url": "/assets/images/weather-2.jpg",
+          "alt": "Weather Dashboard forecast view",
+          "is_primary": false
+        }
+      ],
+      "featured": false,
+      "date": "2022-05"
+    },
+    {
+      "id": "blockchain-explorer",
+      "title": "Blockchain Explorer",
+      "description": "A web application for exploring blockchain data",
+      "long_description": "This blockchain explorer allows users to search for and view information about blocks, transactions, and addresses on various blockchains. It provides real-time data and visualizations to help users understand blockchain activity. The application supports multiple blockchains and includes advanced filtering options.",
+      "technologies": ["React", "Node.js", "Express", "Web3.js", "D3.js", "Redis"],
+      "github_url": "https://github.com/username/blockchain-explorer",
+      "live_url": "https://blockchain.example.com",
+      "images": [
+        {
+          "url": "/assets/images/blockchain-1.jpg",
+          "alt": "Blockchain Explorer dashboard",
+          "is_primary": true
+        },
+        {
+          "url": "/assets/images/blockchain-2.jpg",
+          "alt": "Transaction details view",
+          "is_primary": false
+        }
+      ],
+      "featured": false,
+      "date": "2023-04"
+    }
+  ]
+} 
